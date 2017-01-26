@@ -25,10 +25,13 @@ module.exports = function(grunt) {
                 }
             }
         },
+        clean: {
+            main: ['dist/css']
+        },
         watch: {
             scripts: {
                 files: ['src/**/*'],
-                tasks: ['compass:main']
+                tasks: ['clean','compass:main']
             },
         }
 
@@ -37,6 +40,7 @@ module.exports = function(grunt) {
     // Load the plugins
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-clean');
 
     // Register tasks
     grunt.registerTask('default', ['watch']);
