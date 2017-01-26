@@ -1,0 +1,26 @@
+{
+  "name": "almundo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "^1.0.1"
+  },
+  "devDependencies": {
+    "grunt-contrib-compass": "^1.1.1",
+    "grunt-contrib-watch": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pixlKing/search-result.git"
+  },
+  "author": "Campagna Matias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pixlKing/search-result/issues"
+  },
+  "homepage": "https://github.com/pixlKing/search-result#readme"
+}
