@@ -1,0 +1,78 @@
+﻿.site-header {
+	background: url(/almundo/dist/img/site-bkg.jpg) center top no-repeat;
+
+	a, .item {
+		color: white;
+
+		&:hover {
+			color: $primary-color;
+		}
+	}
+
+	.header-top {
+		.header-top-inner {
+			align-items: center;
+			display: flex;
+			justify-content: space-between;
+			padding: $header-top-spacer 0;
+
+			.site-logo {
+				@include transitions(transition, opacity .3s);
+				&:hover {
+					opacity: .8;
+				}
+			}
+
+			//User navigation
+			.user-nav {
+				ul {
+					float: right;
+					li {
+						border-left: 1px solid white;
+						float: left;
+						padding: 0 $header-user-navlist-spacer;
+
+						.item {
+							@include transitions(transition, color .3s);
+
+							> i {
+								margin: 0 $spacer-xs;
+							}
+
+							&.club-almundo {
+								img {
+									height: $clubalmundo-height;
+								}
+							}
+						}
+
+						&:first-child {
+							border-left: none;
+						}
+					}
+				}
+			}
+		}
+	}
+	.header-bottom {
+		// Site navigation
+		@include bg-opacity(white, 0.1);
+		border-top: 1px solid rgba(white, .4);
+		.site-nav {
+			ul {
+				display: flex;
+		    	justify-content: center;
+
+				li {
+
+					.item {
+						font-size: $sitenav-font-size + 1px;
+						font-weight: bold;
+					    float: left;
+					    padding: $sitenav-link-padding $sitenav-link-padding;
+					}
+				}
+			}
+		}
+	}
+}

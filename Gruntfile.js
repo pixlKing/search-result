@@ -28,10 +28,38 @@ module.exports = function(grunt) {
         clean: {
             main: ['dist/css']
         },
+        /*
+        sprite: {
+            all: {
+                src: 'src/sprites/*.png',
+                dest: 'dist/sprite.png',
+                destCss: 'src/sprites/_sprites.scss',
+                imgPath: 'sprite.png'
+            }
+        },
+        */
+        copy: {
+            main: {
+                files: [
+                    {// Copia las imagenes generales
+                        expand: true,
+                        cwd: 'src/img/',
+                        src: ['**'],
+                        dest: "dist/img/"
+                    },
+                    {// Copia las fuentes para icons
+                        expand: true,
+                        cwd: 'src/fonts/',
+                        src: ['**'],
+                        dest: "dist/fonts/"
+                    }
+                ]
+            },
+        },
         watch: {
             scripts: {
                 files: ['src/**/*'],
-                tasks: ['clean','compass:main']
+                tasks: ['clean','copy','compass:main']
             },
         }
 
@@ -41,8 +69,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-copy');
 
     // Register tasks
-    grunt.registerTask('default', ['watch']);
+    grunt.registerTask('default', ['build','watch']);
+    grunt.registerTask('build', ['clean','copy','compass:main']);
 
 };

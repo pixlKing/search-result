@@ -4,6 +4,9 @@
 // Site Variables
 @import "./vars";
 
+// Site mixins
+@import "./mixins/mixins";
+
 // Grid system
 @import './bourbon-neat/neat';
 @import './neat-settings';
@@ -11,6 +14,11 @@
 // Layout
 @import "./layout";
 
-// Site mixins
+// Global settings
+@import "./scaffolding";
+@import "./fonts";
+
 
 // Components
+@import './header';
+@import './fontawesome/font-awesome';

@@ -1,0 +1,36 @@
+// global Spacers
+$spacer-xs:						5px;
+$spacer-s:						10px;
+$spacer-m:						15px;
+$spacer-l:						20px;
+$spacer-xl:						25px;
+$spacer-xxl:					30px;
+
+// Palette
+$orange:						#FF8300 !default;
+
+// Site Colors
+$primary-color:					$orange;
+
+
+
+
+// Site font
+$font-size-base:				16px !default;
+$font-size-xsmall:				ceil($font-size-base * 0.6) !default; // ~10px
+$font-size-small:				$font-size-base * 0.75 !default; // ~12px
+$font-size-large:				$font-size-base * 1.5 !default; // ~24px
+
+
+$site-font-family:				'Roboto', sans-serif;
+$site-font-size:				$font-size-small;
+
+
+//Header
+$header-top-spacer:				$spacer-s;
+$header-user-navlist-spacer:	$spacer-s;
+$clubalmundo-height:			10px;
+//site navigation
+$sitenav-font-size:				$font-size-small;
+$sitenav-link-padding:			$spacer-s;
+
