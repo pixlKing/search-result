@@ -6,13 +6,14 @@ $spacer-l:						20px;
 $spacer-xl:						25px;
 $spacer-xxl:					30px;
 
+// Animation globals
+$animation-speed:				.3s;
+
 // Palette
 $orange:						#FF8300 !default;
 
 // Site Colors
 $primary-color:					$orange;
-
-
 
 
 // Site font
@@ -33,4 +34,5 @@ $clubalmundo-height:			10px;
 //site navigation
 $sitenav-font-size:				$font-size-small;
 $sitenav-link-padding:			$spacer-s;
+$sitenav-link-hover:			rgba(black,.5);
 

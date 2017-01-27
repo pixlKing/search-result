@@ -489,59 +489,60 @@ body {
 
 /* line 1, ../../src/scss/_header.scss */
 .site-header {
-  background: url(/almundo/dist/img/site-bkg.jpg) center top no-repeat; }
-  /* line 4, ../../src/scss/_header.scss */
+  background: url(/almundo/dist/img/site-bkg.jpg) center top no-repeat;
+  background-size: cover; }
+  /* line 5, ../../src/scss/_header.scss */
   .site-header a, .site-header .item {
     color: white; }
-    /* line 7, ../../src/scss/_header.scss */
-    .site-header a:hover, .site-header .item:hover {
-      color: #FF8300; }
-  /* line 13, ../../src/scss/_header.scss */
+  /* line 10, ../../src/scss/_header.scss */
   .site-header .header-top .header-top-inner {
     align-items: center;
     display: flex;
     justify-content: space-between;
     padding: 10px 0; }
-    /* line 19, ../../src/scss/_header.scss */
+    /* line 16, ../../src/scss/_header.scss */
     .site-header .header-top .header-top-inner .site-logo {
       -webkit-transition: opacity 0.3s;
       -moz-transition: opacity 0.3s;
       -o-transition: opacity 0.3s;
       -ms-transition: opacity 0.3s;
       transition: opacity 0.3s; }
-      /* line 21, ../../src/scss/_header.scss */
+      /* line 18, ../../src/scss/_header.scss */
       .site-header .header-top .header-top-inner .site-logo:hover {
         opacity: .8; }
-    /* line 28, ../../src/scss/_header.scss */
+    /* line 25, ../../src/scss/_header.scss */
     .site-header .header-top .header-top-inner .user-nav ul {
       float: right; }
-      /* line 30, ../../src/scss/_header.scss */
+      /* line 27, ../../src/scss/_header.scss */
       .site-header .header-top .header-top-inner .user-nav ul li {
         border-left: 1px solid white;
         float: left;
         padding: 0 10px; }
-        /* line 35, ../../src/scss/_header.scss */
+        /* line 32, ../../src/scss/_header.scss */
         .site-header .header-top .header-top-inner .user-nav ul li .item {
           -webkit-transition: color 0.3s;
           -moz-transition: color 0.3s;
           -o-transition: color 0.3s;
           -ms-transition: color 0.3s;
           transition: color 0.3s; }
-          /* line 38, ../../src/scss/_header.scss */
+          /* line 35, ../../src/scss/_header.scss */
+          .site-header .header-top .header-top-inner .user-nav ul li .item:hover {
+            color: #FF8300; }
+          /* line 39, ../../src/scss/_header.scss */
           .site-header .header-top .header-top-inner .user-nav ul li .item > i {
             margin: 0 5px; }
-          /* line 43, ../../src/scss/_header.scss */
+          /* line 44, ../../src/scss/_header.scss */
           .site-header .header-top .header-top-inner .user-nav ul li .item.club-almundo img {
             height: 10px; }
-        /* line 49, ../../src/scss/_header.scss */
+        /* line 50, ../../src/scss/_header.scss */
         .site-header .header-top .header-top-inner .user-nav ul li:first-child {
           border-left: none; }
-  /* line 57, ../../src/scss/_header.scss */
+  /* line 58, ../../src/scss/_header.scss */
   .site-header .header-bottom {
     background-color: white;
     background-color: rgba(255, 255, 255, 0.1);
     border-top: 1px solid rgba(255, 255, 255, 0.4); }
-    /* line 62, ../../src/scss/_header.scss */
+    /* line 63, ../../src/scss/_header.scss */
     .site-header .header-bottom .site-nav ul {
       display: flex;
       justify-content: center; }
@@ -550,7 +551,15 @@ body {
         font-size: 13px;
         font-weight: bold;
         float: left;
-        padding: 10px 10px; }
+        padding: 10px 10px;
+        -webkit-transition: background-color 0.3s;
+        -moz-transition: background-color 0.3s;
+        -o-transition: background-color 0.3s;
+        -ms-transition: background-color 0.3s;
+        transition: background-color 0.3s; }
+        /* line 75, ../../src/scss/_header.scss */
+        .site-header .header-bottom .site-nav ul li .item:hover {
+          background-color: rgba(0, 0, 0, 0.5); }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome

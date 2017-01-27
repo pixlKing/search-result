@@ -1,12 +1,9 @@
 ﻿.site-header {
 	background: url(/almundo/dist/img/site-bkg.jpg) center top no-repeat;
+	background-size: cover;
 
 	a, .item {
 		color: white;
-
-		&:hover {
-			color: $primary-color;
-		}
 	}
 
 	.header-top {
@@ -34,6 +31,10 @@
 
 						.item {
 							@include transitions(transition, color .3s);
+
+							&:hover {
+								color: $primary-color;
+							}
 
 							> i {
 								margin: 0 $spacer-xs;
@@ -64,12 +65,16 @@
 		    	justify-content: center;
 
 				li {
-
 					.item {
 						font-size: $sitenav-font-size + 1px;
 						font-weight: bold;
 					    float: left;
 					    padding: $sitenav-link-padding $sitenav-link-padding;
+					    @include transitions(transition, background-color $animation-speed);
+
+					    &:hover {
+							background-color: $sitenav-link-hover;
+						}
 					}
 				}
 			}
