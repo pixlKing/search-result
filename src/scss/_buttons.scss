@@ -7,9 +7,11 @@
 	border: none;
 	color: $btn-base-color;
 	cursor: pointer;
+	display: inline-block;
 
 	&:hover, &:active, &:focus {
 		background-color: $btn-base-color-hover;
+		color: $btn-base-color;
 	}
 }
 

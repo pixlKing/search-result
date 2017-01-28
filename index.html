@@ -1,10 +1,11 @@
 ﻿<!DOCTYPE html>
-<html lang="es_AR">
+<html lang="es_AR" ng-app="app">
 <head>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Almundo Argentina</title>
 
+	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="dist/css/main.css">
 </head>
@@ -190,22 +191,18 @@
 				</aside>
 				<!-- Col right -->
 				<section class="grid">
-					<article class="cluster">
-						<button class="btn btn-s">Aceptar</button>
-						<button class="btn btn-l">Aceptar</button>
-						un barco chiquito, en el mar la vida es mas sabrosa
-						habia una vez un barco chiquito, en el mar la vida es mas sabrosa
-						habia una vez un barco chiquito, en el mar la vida es mas sabrosa
-						habia una vez un barco chiquito, en el mar la vida es mas sabrosa
-						habia una vez un barco chiquito, en el mar la vida es mas sabrosa
-						habia una vez un barco chiquito, en el mar la vida es mas sabrosa
-						habia una vez un barco chiquito, en el mar la vida es mas sabrosa
-					</article>
+					<ng-include src="'src/views/includes/cluster.html'"></ng-include>
+					<ng-include src="'src/views/includes/cluster-2.html'"></ng-include>
+					<ng-include src="'src/views/includes/cluster-3.html'"></ng-include>
 				</section>
 			</div>
 
 		</div>
 	</div>
 	<footer class="site-footer"></footer>
+
+	<!-- Scripts -->
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.js"></script>
+	<script src="dist/js/app.js"></script>
 </body>
 </html>

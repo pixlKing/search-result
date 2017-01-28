@@ -1,0 +1,84 @@
+.cluster {
+	@extend .generic-box;
+	display: flex;
+	justify-content: space-between;
+
+	.cluster-box-img {
+		min-width: $cluster-box-img-width;
+		position: relative;
+
+		img {
+			float: left;
+		}
+	}
+	.cluster-box-center {
+		margin: 0 $spacer-s;
+		width: $cluster-box-center-width;
+
+		.cluster-title {
+			font-size: $font-size-small + 2;
+			margin: 0 0 $spacer-xs;
+			a {
+				color: $cluster-title-color;
+			}
+			&:hover {
+				a {
+					color: $cluster-title-color-hover;
+				}
+			}
+		}
+		.cluster-stars {
+			color: $stars-color;
+			margin-bottom: $spacer-s;
+		}
+		.meal-plan {
+			color: $meal-plan-color;
+			margin-bottom: $spacer-s;
+
+			span {
+				font-weight: bold;
+			}
+		}
+		.amenities {
+			font-size: $amenities-font-size;
+			i {
+				margin-right: $spacer-xs;
+			}
+		}
+	}
+	.cluster-box-price {
+		border-left: 1px dashed $grey;
+		padding: 0 $spacer-l;
+		text-align: center;
+		width: $cluster-box-price-width;
+
+		.box-price {
+			margin-bottom: $spacer-xs;
+			.text {
+				margin: 0 0 $spacer-xs;
+				font-size: $font-size-xsmall - 1;
+			}
+			.regular-price {
+				color: $regular-price-color;
+				font-size: $regular-price-size;
+				margin-bottom: $spacer-xs + 3;
+
+				.price {
+					font-size: $regular-price-size + 8;
+				}
+			}
+		}
+		.show-article {
+			margin-bottom: $spacer-xs;
+		}
+		.payment-methods {
+			font-weight: bold;
+			.text {
+				margin: 0 0 $spacer-xs;
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}

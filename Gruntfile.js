@@ -52,6 +52,12 @@ module.exports = function(grunt) {
                         cwd: 'src/fonts/',
                         src: ['**'],
                         dest: "dist/fonts/"
+                    },
+                    {// Copia los js
+                        expand: true,
+                        cwd: 'src/js/',
+                        src: ['**'],
+                        dest: "dist/js/"
                     }
                 ]
             },

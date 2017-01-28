@@ -1,0 +1,13 @@
+.flags {
+	pointer-events: none;
+	position: absolute;
+	width: 100%;
+	.flag {
+		color: white;
+		padding: $spacer-xs 0;
+		text-align: center;
+		&.recomendado {
+			background-color: $recomendado-color;
+		}
+	}
+}

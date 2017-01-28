@@ -13,7 +13,7 @@ $border-m:						$spacer-xs - 2;
 $animation-speed:				.3s;
 
 // Palette
-$orange:						#FF8300 !default;
+$orange:						#df6800 !default;
 $cyan:							#2671dd !default;
 $cyan-light:					lighten( $cyan, 20% );
 $blue:							#002c77 !default;
@@ -74,3 +74,18 @@ $searchbox-padding:				$spacer-m;
 
 // Filters
 $stars-color:					$gold;
+
+// Cluster product
+$cluster-title-color:			$grey-dark;
+$cluster-title-color-hover:		$link-color;
+$meal-plan-color:				$primary-color;
+$amenities-font-size:			$font-size-medium;
+$regular-price-color:			$primary-color;
+$regular-price-size:			$font-size-medium + 4;
+$cluster-box-img-width:			244px;
+$cluster-box-center-width:		50%;
+$cluster-box-price-width:		30%;
+
+// Flags
+// Flags Colors
+$recomendado-color:				$link-color;
