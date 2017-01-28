@@ -22,6 +22,8 @@ $grey-light:					#f4f4f4 !default;
 $grey:							#cccccc !default;
 $grey-dark:						#444444 !default;
 $gold:							#fdba12 !default;
+$green:							#509e3c !default;
+$green-dark:					darken( $green, 20% );
 
 // Site Colors
 $primary-color:					$orange !default;
@@ -89,3 +91,12 @@ $cluster-box-price-width:		30%;
 // Flags
 // Flags Colors
 $recomendado-color:				$link-color;
+$off-color:						$green;
+$off-color-caret:				$green-dark;
+
+// Range slider
+$range-bar-bg:					$grey;
+$range-bar-active-bg:			$grey-dark;
+$range-grab-height:				2.2em;
+$range-grab-width:				1.1em;
+$range-grab-radius:				50px;

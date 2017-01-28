@@ -119,7 +119,16 @@
 								<i class="fa fa-caret-down pull-right" aria-hidden="true"></i>
 							</header>
 							<footer class="filter-footer">
-								<img src="/almundo/dist/img/price-range-dummy.jpg" />
+
+								<div class="slider-range" id="slider-range"></div>
+								<div class="range-amount">
+									<p id="amount">
+										<b class="min"></b>
+										<b class="max"></b>
+									</p>
+									<!--<input type="text" id="amount" readonly />-->
+								</div>
+
 							</footer>
 						</div>
 						<!-- box Filtro by Stars -->
@@ -202,7 +211,10 @@
 	<footer class="site-footer"></footer>
 
 	<!-- Scripts -->
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.js"></script>
 	<script src="dist/js/app.js"></script>
+	<script src="dist/js/search-result.js"></script>
 </body>
 </html>

@@ -6,8 +6,28 @@
 		color: white;
 		padding: $spacer-xs 0;
 		text-align: center;
+
 		&.recomendado {
 			background-color: $recomendado-color;
+		}
+		&.off {
+			background-color: $off-color;
+			display: inline-block;
+			margin-left: $spacer-s;
+			margin-top: $spacer-s * -1;
+			padding: $spacer-xs;
+			position: relative;
+			text-align: center;
+
+			&:after {
+				border: $spacer-xs solid transparent;
+				border-bottom-color: $off-color-caret;
+				border-left-color: $off-color-caret;
+				content:'';
+				position: absolute;
+				right: $spacer-s * -1;
+				top: 0;
+			}
 		}
 	}
 }

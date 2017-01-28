@@ -9,6 +9,7 @@
 /* Document
    ========================================================================== */
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,500,600,700,900");
+@import url("http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.min.css");
 /* line 13, ../../src/scss/_normalize.scss */
 html {
   font-family: sans-serif;
@@ -3821,75 +3822,99 @@ select {
 .cluster {
   display: flex;
   justify-content: space-between; }
-  /* line 6, ../../src/scss/_clusters.scss */
+  /* line 7, ../../src/scss/_clusters.scss */
   .cluster .cluster-box-img {
     min-width: 244px;
     position: relative; }
-    /* line 10, ../../src/scss/_clusters.scss */
+    /* line 11, ../../src/scss/_clusters.scss */
     .cluster .cluster-box-img img {
       float: left; }
-  /* line 14, ../../src/scss/_clusters.scss */
+    /* line 16, ../../src/scss/_clusters.scss */
+    .cluster .cluster-box-img .cluster-nav-img .prev, .cluster .cluster-box-img .cluster-nav-img .next {
+      color: white;
+      font-size: 20px;
+      margin-top: -30px;
+      position: absolute;
+      top: 50%;
+      cursor: pointer; }
+      /* line 24, ../../src/scss/_clusters.scss */
+      .cluster .cluster-box-img .cluster-nav-img .prev:before, .cluster .cluster-box-img .cluster-nav-img .next:before {
+        background-color: #2671dd;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        -webkit-box-shadow: inset 0 0 0 3px white;
+        -moz-box-shadow: inset 0 0 0 3px white;
+        box-shadow: inset 0 0 0 3px white;
+        padding: 0 2px; }
+    /* line 31, ../../src/scss/_clusters.scss */
+    .cluster .cluster-box-img .cluster-nav-img .prev {
+      left: 5px; }
+    /* line 34, ../../src/scss/_clusters.scss */
+    .cluster .cluster-box-img .cluster-nav-img .next {
+      right: 5px; }
+  /* line 39, ../../src/scss/_clusters.scss */
   .cluster .cluster-box-center {
     margin: 0 10px;
     width: 50%; }
-    /* line 18, ../../src/scss/_clusters.scss */
+    /* line 43, ../../src/scss/_clusters.scss */
     .cluster .cluster-box-center .cluster-title {
       font-size: 14px;
       margin: 0 0 5px; }
-      /* line 21, ../../src/scss/_clusters.scss */
+      /* line 46, ../../src/scss/_clusters.scss */
       .cluster .cluster-box-center .cluster-title a {
         color: #444444; }
-      /* line 25, ../../src/scss/_clusters.scss */
+      /* line 50, ../../src/scss/_clusters.scss */
       .cluster .cluster-box-center .cluster-title:hover a {
         color: #2671dd; }
-    /* line 30, ../../src/scss/_clusters.scss */
+    /* line 55, ../../src/scss/_clusters.scss */
     .cluster .cluster-box-center .cluster-stars {
       color: #fdba12;
       margin-bottom: 10px; }
-    /* line 34, ../../src/scss/_clusters.scss */
+    /* line 59, ../../src/scss/_clusters.scss */
     .cluster .cluster-box-center .meal-plan {
       color: #df6800;
       margin-bottom: 10px; }
-      /* line 38, ../../src/scss/_clusters.scss */
+      /* line 63, ../../src/scss/_clusters.scss */
       .cluster .cluster-box-center .meal-plan span {
         font-weight: bold; }
-    /* line 42, ../../src/scss/_clusters.scss */
+    /* line 67, ../../src/scss/_clusters.scss */
     .cluster .cluster-box-center .amenities {
       font-size: 16px; }
-      /* line 44, ../../src/scss/_clusters.scss */
+      /* line 69, ../../src/scss/_clusters.scss */
       .cluster .cluster-box-center .amenities i {
         margin-right: 5px; }
-  /* line 49, ../../src/scss/_clusters.scss */
+  /* line 74, ../../src/scss/_clusters.scss */
   .cluster .cluster-box-price {
     border-left: 1px dashed #cccccc;
     padding: 0 20px;
     text-align: center;
     width: 30%; }
-    /* line 55, ../../src/scss/_clusters.scss */
+    /* line 80, ../../src/scss/_clusters.scss */
     .cluster .cluster-box-price .box-price {
       margin-bottom: 5px; }
-      /* line 57, ../../src/scss/_clusters.scss */
+      /* line 82, ../../src/scss/_clusters.scss */
       .cluster .cluster-box-price .box-price .text {
         margin: 0 0 5px;
         font-size: 9px; }
-      /* line 61, ../../src/scss/_clusters.scss */
+      /* line 86, ../../src/scss/_clusters.scss */
       .cluster .cluster-box-price .box-price .regular-price {
         color: #df6800;
         font-size: 20px;
         margin-bottom: 8px; }
-        /* line 66, ../../src/scss/_clusters.scss */
+        /* line 91, ../../src/scss/_clusters.scss */
         .cluster .cluster-box-price .box-price .regular-price .price {
           font-size: 28px; }
-    /* line 71, ../../src/scss/_clusters.scss */
+    /* line 96, ../../src/scss/_clusters.scss */
     .cluster .cluster-box-price .show-article {
       margin-bottom: 5px; }
-    /* line 74, ../../src/scss/_clusters.scss */
+    /* line 99, ../../src/scss/_clusters.scss */
     .cluster .cluster-box-price .payment-methods {
       font-weight: bold; }
-      /* line 76, ../../src/scss/_clusters.scss */
+      /* line 101, ../../src/scss/_clusters.scss */
       .cluster .cluster-box-price .payment-methods .text {
         margin: 0 0 5px; }
-        /* line 78, ../../src/scss/_clusters.scss */
+        /* line 103, ../../src/scss/_clusters.scss */
         .cluster .cluster-box-price .payment-methods .text:last-child {
           margin-bottom: 0; }
 
@@ -3903,9 +3928,70 @@ select {
     color: white;
     padding: 5px 0;
     text-align: center; }
-    /* line 9, ../../src/scss/_flags.scss */
+    /* line 10, ../../src/scss/_flags.scss */
     .flags .flag.recomendado {
       background-color: #2671dd; }
+    /* line 13, ../../src/scss/_flags.scss */
+    .flags .flag.off {
+      background-color: #509e3c;
+      display: inline-block;
+      margin-left: 10px;
+      margin-top: -10px;
+      padding: 5px;
+      position: relative;
+      text-align: center; }
+      /* line 22, ../../src/scss/_flags.scss */
+      .flags .flag.off:after {
+        border: 5px solid transparent;
+        border-bottom-color: #2b5420;
+        border-left-color: #2b5420;
+        content: '';
+        position: absolute;
+        right: -10px;
+        top: 0; }
+
+/* line 5, ../../src/scss/_range-slider.scss */
+.ui-widget-content {
+  background-color: #cccccc; }
+
+/* line 8, ../../src/scss/_range-slider.scss */
+.ui-widget-header {
+  background-color: #444444;
+  -webkit-box-shadow: 0 0 0 1px #444444;
+  -moz-box-shadow: 0 0 0 1px #444444;
+  box-shadow: 0 0 0 1px #444444; }
+
+/* line 12, ../../src/scss/_range-slider.scss */
+.ui-widget.ui-widget-content {
+  border-color: transparent; }
+
+/* line 15, ../../src/scss/_range-slider.scss */
+.ui-slider .ui-slider-handle {
+  cursor: pointer;
+  height: 2.2em;
+  width: 1.1em; }
+  /* line 20, ../../src/scss/_range-slider.scss */
+  .ui-slider .ui-slider-handle:focus, .ui-slider .ui-slider-handle:active {
+    outline: none; }
+
+/* line 24, ../../src/scss/_range-slider.scss */
+.ui-slider-horizontal .ui-slider-handle {
+  border: 1px solid #444444;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  top: -0.8em; }
+
+/* line 31, ../../src/scss/_range-slider.scss */
+.slider-range {
+  margin-top: 15px; }
+
+/* line 35, ../../src/scss/_range-slider.scss */
+.range-amount p {
+  display: flex;
+  font-size: 11px;
+  justify-content: space-between;
+  padding: 5px 0 0; }
 
 /* line 1, ../../src/scss/_search-result.scss */
 .filters-col {

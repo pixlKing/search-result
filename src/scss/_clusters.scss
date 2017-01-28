@@ -3,12 +3,37 @@
 	display: flex;
 	justify-content: space-between;
 
+
 	.cluster-box-img {
 		min-width: $cluster-box-img-width;
 		position: relative;
 
 		img {
 			float: left;
+		}
+
+		.cluster-nav-img {
+			.prev, .next {
+				color: white;
+				font-size: $spacer-l;
+				margin-top: $spacer-xxl * -1;
+				position: absolute;
+				top: 50%;
+				cursor: pointer;
+
+				&:before {
+					background-color: $link-color;
+				    @include border-radius(50%);
+				    @include box-shadow(0,0,0,3px,white,inset);
+				    padding: 0 2px;
+				}
+			}
+			.prev {
+				left: $spacer-xs;
+			}
+			.next {
+				right: $spacer-xs;
+			}
 		}
 	}
 	.cluster-box-center {

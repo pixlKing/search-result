@@ -1,0 +1,41 @@
+// Plugin styles
+@import url('http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.min.css');
+
+//Override styles
+.ui-widget-content {
+	background-color: $range-bar-bg;
+}
+.ui-widget-header {
+	background-color: $range-bar-active-bg;
+	@include box-shadow(0,0,0,1px,$range-bar-active-bg);
+}
+.ui-widget.ui-widget-content {
+	border-color: transparent;
+}
+.ui-slider .ui-slider-handle {
+	cursor: pointer;
+	height: $range-grab-height;
+	width: $range-grab-width;
+
+	&:focus, &:active {
+		outline: none;
+	}
+}
+.ui-slider-horizontal .ui-slider-handle {
+	border: 1px solid $range-bar-active-bg;
+	@include border-radius($range-grab-radius);
+	top: -0.8em;
+}
+
+//
+.slider-range {
+	margin-top: $spacer-m;
+}
+.range-amount {
+	p {
+		display: flex;
+		font-size: $font-size-xsmall + 1;
+		justify-content: space-between;
+		padding: $spacer-xs 0 0;
+	}
+}
