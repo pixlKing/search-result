@@ -31,3 +31,31 @@
 		}
 	}
 }
+// Stars filter
+.filter-stars-cont {
+
+	label {
+	    align-items: center;
+		display: flex;
+		padding: $spacer-s 0;
+
+
+		input {
+			margin-right: $spacer-xs;
+
+			&:checked ~ .result-qty {
+				font-weight: bold;
+			}
+		}
+		.box-stars {
+			margin-right: $spacer-xs;
+
+			i {
+				color: $stars-color;
+			}
+		}
+		.result-qty {
+
+		}
+	}
+}

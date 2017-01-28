@@ -588,6 +588,10 @@ body {
         .site-header .header-bottom .site-nav ul li .item:hover {
           background-color: rgba(0, 0, 0, 0.5); }
 
+/* line 1, ../../src/scss/_footer.scss */
+.site-footer {
+  height: 100px; }
+
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -3675,6 +3679,10 @@ input[type="text"], input[type="password"], input[type="email"] {
   padding: 4px; }
 
 /* line 7, ../../src/scss/_forms.scss */
+label {
+  cursor: pointer; }
+
+/* line 10, ../../src/scss/_forms.scss */
 select {
   border-color: #cccccc;
   color: #444444;
@@ -3696,6 +3704,9 @@ select {
   /* line 10, ../../src/scss/_generics.scss */
   .generic-box.no-margin {
     margin: 0; }
+  /* line 13, ../../src/scss/_generics.scss */
+  .generic-box.box-glued {
+    border-bottom: 3px solid #f4f4f4; }
 
 /* line 1, ../../src/scss/_utilities.scss */
 .ta-center {
@@ -3747,6 +3758,24 @@ select {
   /* line 29, ../../src/scss/_filters.scss */
   .filter-footer .buttons-set .btn {
     margin-left: 10px; }
+
+/* line 37, ../../src/scss/_filters.scss */
+.filter-stars-cont label {
+  align-items: center;
+  display: flex;
+  padding: 10px 0; }
+  /* line 43, ../../src/scss/_filters.scss */
+  .filter-stars-cont label input {
+    margin-right: 5px; }
+    /* line 46, ../../src/scss/_filters.scss */
+    .filter-stars-cont label input:checked ~ .result-qty {
+      font-weight: bold; }
+  /* line 50, ../../src/scss/_filters.scss */
+  .filter-stars-cont label .box-stars {
+    margin-right: 5px; }
+    /* line 53, ../../src/scss/_filters.scss */
+    .filter-stars-cont label .box-stars i {
+      color: #fdba12; }
 
 /* line 3, ../../src/scss/_buttons.scss */
 .btn {

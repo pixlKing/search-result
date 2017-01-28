@@ -4,6 +4,9 @@ input {
 input[type="text"], input[type="password"], input[type="email"] {
 	padding: $spacer-xs - 1px;
 }
+label {
+	cursor: pointer;
+}
 select {
 	border-color: $border-color;
 	color: $select-color;

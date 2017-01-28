@@ -6,6 +6,9 @@ $spacer-l:						20px;
 $spacer-xl:						25px;
 $spacer-xxl:					30px;
 
+// Global borders
+$border-m:						$spacer-xs - 2;
+
 // Animation globals
 $animation-speed:				.3s;
 
@@ -18,6 +21,7 @@ $blue-dark:						darken( $blue,  20% );
 $grey-light:					#f4f4f4 !default;
 $grey:							#cccccc !default;
 $grey-dark:						#444444 !default;
+$gold:							#fdba12 !default;
 
 // Site Colors
 $primary-color:					$orange !default;
@@ -67,3 +71,6 @@ $breadcrumb-f-size:				$font-size-xsmall;
 
 //Searchbox
 $searchbox-padding:				$spacer-m;
+
+// Filters
+$stars-color:					$gold;
