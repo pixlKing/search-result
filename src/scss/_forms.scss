@@ -1,6 +1,13 @@
+input {
+	border: 1px solid $border-color;
+}
+input[type="text"], input[type="password"], input[type="email"] {
+	padding: $spacer-xs - 1px;
+}
 select {
 	border-color: $border-color;
 	color: $select-color;
+	cursor: pointer;
 	font-size: $font-size-small - 1px;
 	padding: $spacer-xs;
 }

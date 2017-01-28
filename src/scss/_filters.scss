@@ -1,0 +1,33 @@
+.filters-title {
+	margin-bottom: $spacer-xs;
+}
+.filter-header {
+	@include transitions(transition, color $animation-speed);
+	color: $link-color;
+	font-size: $font-size-small;
+    font-weight: bold;
+    margin-bottom: $spacer-s;
+
+	i:first-child {
+		padding-right: $spacer-xs;
+	}
+
+	&:hover {
+		color: $link-color-hover;
+		cursor: pointer;
+	}
+}
+.filter-footer {
+	.buttons-set {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+
+		input {
+			width: 100%;
+		}
+		.btn {
+			margin-left: $spacer-s;
+		}
+	}
+}

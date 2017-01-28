@@ -1,0 +1,28 @@
+// Boton standard
+
+.btn {
+	@include border-radius($btn-base-radius);
+	@include transitions(transition, background-color $animation-speed);
+	background-color: $btn-base-bg;
+	border: none;
+	color: $btn-base-color;
+	cursor: pointer;
+
+	&:hover, &:active, &:focus {
+		background-color: $btn-base-color-hover;
+	}
+}
+
+.btn-s {
+	@include box-shadow(0, -2px, 1px, 0, $btn-shadow-color, inset);
+	padding: $spacer-xs;
+}
+.btn-l {
+	@include box-shadow(0, -3px, 1px, 0, $btn-shadow-color, inset);
+	font-size: $font-size-medium;
+	padding: $spacer-s;
+    font-weight: 500;
+}
+.btn-full {
+	width: 100%;
+}

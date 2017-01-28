@@ -1,9 +1,13 @@
 // Global specific resets for the site Almundo
 a, .link {
-	@include transitions(transition, color .3s);
+	@include transitions(transition, color $animation-speed);
 	color: $link-color;
 	cursor: pointer;
 	text-decoration: none;
+
+	&:hover {
+		color: $link-color-hover;
+	}
 }
 img {
 	max-width: 100%;
@@ -20,4 +24,3 @@ body {
 	font-family: $site-font-family;
 	font-size:	 $site-font-size;
 }
-

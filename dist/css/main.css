@@ -8,7 +8,7 @@
  */
 /* Document
    ========================================================================== */
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700,900");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,500,600,700,900");
 /* line 13, ../../src/scss/_normalize.scss */
 html {
   font-family: sans-serif;
@@ -492,18 +492,21 @@ a, .link {
   color: #2671dd;
   cursor: pointer;
   text-decoration: none; }
+  /* line 8, ../../src/scss/_scaffolding.scss */
+  a:hover, .link:hover {
+    color: #7eabeb; }
 
-/* line 8, ../../src/scss/_scaffolding.scss */
+/* line 12, ../../src/scss/_scaffolding.scss */
 img {
   max-width: 100%; }
 
-/* line 11, ../../src/scss/_scaffolding.scss */
+/* line 15, ../../src/scss/_scaffolding.scss */
 ul {
   list-style: none;
   margin: 0;
   padding: 0; }
 
-/* line 17, ../../src/scss/_scaffolding.scss */
+/* line 21, ../../src/scss/_scaffolding.scss */
 body {
   background-color: #f4f4f4;
   color: #444444;
@@ -3664,9 +3667,18 @@ body {
     padding-right: 5px; }
 
 /* line 1, ../../src/scss/_forms.scss */
+input {
+  border: 1px solid #cccccc; }
+
+/* line 4, ../../src/scss/_forms.scss */
+input[type="text"], input[type="password"], input[type="email"] {
+  padding: 4px; }
+
+/* line 7, ../../src/scss/_forms.scss */
 select {
   border-color: #cccccc;
   color: #444444;
+  cursor: pointer;
   font-size: 11px;
   padding: 5px; }
 
@@ -3681,14 +3693,98 @@ select {
   /* line 7, ../../src/scss/_generics.scss */
   .generic-box.no-padding {
     padding: 0; }
+  /* line 10, ../../src/scss/_generics.scss */
+  .generic-box.no-margin {
+    margin: 0; }
 
 /* line 1, ../../src/scss/_utilities.scss */
 .ta-center {
   text-align: center; }
 
+/* line 4, ../../src/scss/_utilities.scss */
+.pull-right {
+  float: right; }
+
+/* line 7, ../../src/scss/_utilities.scss */
+.pull-left {
+  float: left; }
+
 /* line 1, ../../src/scss/_button-group.scss */
 .button-group {
   padding: 5px; }
+
+/* line 1, ../../src/scss/_filters.scss */
+.filters-title {
+  margin-bottom: 5px; }
+
+/* line 4, ../../src/scss/_filters.scss */
+.filter-header {
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  -ms-transition: color 0.3s;
+  transition: color 0.3s;
+  color: #2671dd;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 10px; }
+  /* line 11, ../../src/scss/_filters.scss */
+  .filter-header i:first-child {
+    padding-right: 5px; }
+  /* line 15, ../../src/scss/_filters.scss */
+  .filter-header:hover {
+    color: #7eabeb;
+    cursor: pointer; }
+
+/* line 21, ../../src/scss/_filters.scss */
+.filter-footer .buttons-set {
+  align-items: center;
+  display: flex;
+  justify-content: space-between; }
+  /* line 26, ../../src/scss/_filters.scss */
+  .filter-footer .buttons-set input {
+    width: 100%; }
+  /* line 29, ../../src/scss/_filters.scss */
+  .filter-footer .buttons-set .btn {
+    margin-left: 10px; }
+
+/* line 3, ../../src/scss/_buttons.scss */
+.btn {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  -ms-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  background-color: #002c77;
+  border: none;
+  color: white;
+  cursor: pointer; }
+  /* line 11, ../../src/scss/_buttons.scss */
+  .btn:hover, .btn:active, .btn:focus {
+    background-color: #2671dd; }
+
+/* line 16, ../../src/scss/_buttons.scss */
+.btn-s {
+  -webkit-box-shadow: inset 0 -2px 1px 0 #000611;
+  -moz-box-shadow: inset 0 -2px 1px 0 #000611;
+  box-shadow: inset 0 -2px 1px 0 #000611;
+  padding: 5px; }
+
+/* line 20, ../../src/scss/_buttons.scss */
+.btn-l {
+  -webkit-box-shadow: inset 0 -3px 1px 0 #000611;
+  -moz-box-shadow: inset 0 -3px 1px 0 #000611;
+  box-shadow: inset 0 -3px 1px 0 #000611;
+  font-size: 16px;
+  padding: 10px;
+  font-weight: 500; }
+
+/* line 26, ../../src/scss/_buttons.scss */
+.btn-full {
+  width: 100%; }
 
 /* line 1, ../../src/scss/_search-result.scss */
 .filters-col {

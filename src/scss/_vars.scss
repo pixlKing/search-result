@@ -12,7 +12,9 @@ $animation-speed:				.3s;
 // Palette
 $orange:						#FF8300 !default;
 $cyan:							#2671dd !default;
+$cyan-light:					lighten( $cyan, 20% );
 $blue:							#002c77 !default;
+$blue-dark:						darken( $blue,  20% );
 $grey-light:					#f4f4f4 !default;
 $grey:							#cccccc !default;
 $grey-dark:						#444444 !default;
@@ -20,8 +22,10 @@ $grey-dark:						#444444 !default;
 // Site Colors
 $primary-color:					$orange !default;
 $secondary-color:				$blue !default;
+$terciary-color:				$blue-dark !default;
 $body-bg-color:					$grey-light;
 $link-color:					$cyan !default;
+$link-color-hover:				$cyan-light !default;
 
 $border-color:					$grey;
 $font-base-color:				$grey-dark;
@@ -30,6 +34,7 @@ $font-base-color:				$grey-dark;
 $font-size-base:				16px !default;
 $font-size-xsmall:				ceil($font-size-base * 0.6) !default; // ~10px
 $font-size-small:				$font-size-base * 0.75 !default; // ~12px
+$font-size-medium:				$font-size-base * 1 !default; // ~16px
 $font-size-large:				$font-size-base * 1.5 !default; // ~24px
 
 $site-font-family:				'Roboto', sans-serif;
@@ -37,6 +42,13 @@ $site-font-size:				$font-size-small;
 
 // Forms
 $select-color:					$grey-dark;
+
+// Buttons
+$btn-base-bg:					$secondary-color;
+$btn-base-color:				white;
+$btn-base-color-hover:			$link-color;
+$btn-base-radius:				2px;
+$btn-shadow-color:				$terciary-color;
 
 //Header
 $header-top-spacer:				$spacer-s;
