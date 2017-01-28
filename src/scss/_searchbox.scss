@@ -1,0 +1,25 @@
+.searchbox {
+	border: 1px solid $border-color;
+	margin-bottom: $spacer-s;
+	padding: $searchbox-padding;
+
+	.searchbox-title {
+		font-weight: normal;
+		font-size: $font-size-base;
+		margin: 0 0 $spacer-s;
+	}
+	.searchbox-data {
+		ul {
+			display: flex;
+			li {
+				padding-right: $spacer-m;
+				i {
+					margin-right: $spacer-xs;
+				}
+			}
+		}
+		.link {
+
+		}
+	}
+}

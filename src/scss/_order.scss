@@ -1,0 +1,13 @@
+.order-box {
+	align-items: center;
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: $spacer-s;
+
+	.order-box-title {
+		padding-right: $spacer-xs;
+	}
+	.order-box-select {
+
+	}
+}

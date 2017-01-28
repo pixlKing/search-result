@@ -1,3 +1,9 @@
 .site-col {
 	@include outer-container;
 }
+.main-content {
+	padding: $content-spacer;
+}
+.content {
+	@include outer-container;
+}

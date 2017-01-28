@@ -1,0 +1,7 @@
+.filters-col {
+	@include span-columns(3);
+}
+.grid {
+	@include span-columns(9);
+	@include omega();
+}

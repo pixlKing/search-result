@@ -1,6 +1,7 @@
 ﻿.site-header {
 	background: url(/almundo/dist/img/site-bkg.jpg) center top no-repeat;
 	background-size: cover;
+	margin-bottom: $spacer-s;
 
 	a, .item {
 		color: white;

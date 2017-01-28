@@ -1,0 +1,6 @@
+select {
+	border-color: $border-color;
+	color: $select-color;
+	font-size: $font-size-small - 1px;
+	padding: $spacer-xs;
+}

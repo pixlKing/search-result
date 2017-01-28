@@ -1,7 +1,12 @@
 // Global specific resets for the site Almundo
-a {
+a, .link {
 	@include transitions(transition, color .3s);
+	color: $link-color;
+	cursor: pointer;
 	text-decoration: none;
+}
+img {
+	max-width: 100%;
 }
 ul {
   list-style: none;
@@ -10,6 +15,9 @@ ul {
 }
 
 body {
+	background-color: $body-bg-color;
+	color: $font-base-color;
 	font-family: $site-font-family;
 	font-size:	 $site-font-size;
 }
+

@@ -11,10 +11,20 @@ $animation-speed:				.3s;
 
 // Palette
 $orange:						#FF8300 !default;
+$cyan:							#2671dd !default;
+$blue:							#002c77 !default;
+$grey-light:					#f4f4f4 !default;
+$grey:							#cccccc !default;
+$grey-dark:						#444444 !default;
 
 // Site Colors
-$primary-color:					$orange;
+$primary-color:					$orange !default;
+$secondary-color:				$blue !default;
+$body-bg-color:					$grey-light;
+$link-color:					$cyan !default;
 
+$border-color:					$grey;
+$font-base-color:				$grey-dark;
 
 // Site font
 $font-size-base:				16px !default;
@@ -22,17 +32,26 @@ $font-size-xsmall:				ceil($font-size-base * 0.6) !default; // ~10px
 $font-size-small:				$font-size-base * 0.75 !default; // ~12px
 $font-size-large:				$font-size-base * 1.5 !default; // ~24px
 
-
 $site-font-family:				'Roboto', sans-serif;
 $site-font-size:				$font-size-small;
 
+// Forms
+$select-color:					$grey-dark;
 
 //Header
 $header-top-spacer:				$spacer-s;
 $header-user-navlist-spacer:	$spacer-s;
-$clubalmundo-height:			10px;
+$clubalmundo-height:			$spacer-s;
 //site navigation
 $sitenav-font-size:				$font-size-small;
 $sitenav-link-padding:			$spacer-s;
 $sitenav-link-hover:			rgba(black,.5);
 
+//Content
+$content-spacer:				$spacer-s;
+
+//Breadcrumb
+$breadcrumb-f-size:				$font-size-xsmall;
+
+//Searchbox
+$searchbox-padding:				$spacer-m;

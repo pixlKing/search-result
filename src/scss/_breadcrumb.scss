@@ -1,0 +1,17 @@
+.breadcrumb {
+	font-size: $breadcrumb-f-size;
+	margin-bottom: $spacer-l;
+
+	a {
+		padding-right: 2px;
+		&:after {
+			content:'/';
+			color: black;
+			font-size: $font-size-xsmall - 1px;
+			padding-left: $spacer-xs;
+		}
+	}
+	span {
+
+	}
+}
