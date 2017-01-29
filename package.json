@@ -4,7 +4,9 @@
   "description": "",
   "main": "Gruntfile.js",
   "dependencies": {
-    "grunt": "^1.0.1"
+    "express": "~3.x",
+    "grunt": "^1.0.1",
+    "mongoose": "^4.8.0"
   },
   "devDependencies": {
     "grunt-contrib-clean": "^1.0.0",

@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="es_AR" ng-app="app">
+<html lang="es_AR" ng-app="angularTodo"><!-- ng-app="app" -->
 <head>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,9 +10,35 @@
 
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="dist/css/main.css">
+	<link rel="stylesheet" type="text/css" href="/almundo/dist/css/main.css">
 </head>
 <body>
+
+	<div ng-controller="mainController">
+		<div class="checkbox" ng-repeat="todo in todos">
+			<label>
+				<input type="checkbox" ng-click="deleteTodo(todo._id)"> {{ todo.text }}
+			</label>
+		</div>
+
+
+
+		<form>
+			<div class="form-group">
+				<input type="text" class="form-control input-lg text-center" placeholder="Inserta una tarea nueva" ng-model="formData.text">
+			</div>
+			<button class="btn btn-primary btn-lg" ng-click="createTodo()">
+				Añadir
+			</button>
+		</form>
+	</div>
+
+
+
+
+
+
+
 	<header class="site-header">
 		<div class="header-top">
 			<div class="site-col">
@@ -268,9 +294,9 @@
 						</select>
 					</section>
 
-					<ng-include src="'src/views/includes/cluster.html'"></ng-include>
-					<ng-include src="'src/views/includes/cluster-2.html'"></ng-include>
-					<ng-include src="'src/views/includes/cluster-3.html'"></ng-include>
+					<ng-include src="'/almundo/src/views/includes/cluster.html'"></ng-include>
+					<ng-include src="'/almundo/src/views/includes/cluster-2.html'"></ng-include>
+					<ng-include src="'/almundo/src/views/includes/cluster-3.html'"></ng-include>
 				</section>
 			</div>
 
@@ -282,7 +308,7 @@
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.js"></script>
-	<script src="dist/js/app.js"></script>
-	<script src="dist/js/search-result.js"></script>
+	<script src="/almundo/dist/js/app.js"></script>
+	<script src="/almundo/dist/js/search-result.js"></script>
 </body>
 </html>
