@@ -13,6 +13,9 @@
 			@include dropdown-active;//show when is active
 		}
 	}
+	@media ( min-width: $mobile + 1 ){
+		@include show-element;
+	}
 }
 .filter-header {
 	@include transitions(transition, color $animation-speed);

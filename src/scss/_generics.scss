@@ -28,6 +28,9 @@
 	padding: $spacer-m $spacer-xs;
 	text-align: center;
 }
+.clean-link-box {
+	@include clean-link-box;
+}
 
 // Dropdown
 @mixin dropdown {
@@ -47,24 +50,25 @@
 	@include transition(transform $animation-speed ease-in-out);
 }
 
-@media only screen and ( max-width: $mobile ){
 
-	.dropdown-trigger {
-		//@include dropdown;
 
-		&.active {
-			@include dropdown-active;
+[data-drop-trigger] {
 
-			.dropdown-icon {
-				@include dropdown-icon-active;
-			}
+	&.active {
+		@include dropdown-active;
+
+		[data-drop-icon] {
+			@include dropdown-icon-active;
 		}
 	}
-	.dropdown-colapse {
-		@include dropdown-colapse;
+}
+[data-drop-colapse] {
+	//@include dropdown-colapse;
 
-		&.active {
-			@include dropdown-colapse-active;
-		}
+	&.active {
+		@include dropdown-colapse-active;
+	}
+	&.closed {
+		@include dropdown;
 	}
 }

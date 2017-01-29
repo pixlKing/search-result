@@ -24,14 +24,16 @@ function checkAllStars(){
 
 //Generic dropdown functionality
 function dropdowns(){
-    var trigger = $(".dropdown-trigger");
-    var colapse = $(".dropdown-colapse");
-    var icon    = $(".dropdown-icon");
 
-    trigger.click(function(){
-        $(this).toggleClass("active");
-        $(this).parent().find(colapse).toggleClass("active");
-        $(this).find(".dropdown-icon").toggleClass("active")
+    $("*[data-drop-trigger]").click(function(){
+        var key     = $(this).attr("data-drop-trigger");
+        var trigger = $(this);
+        var colapse = $("*[data-drop-colapse='"+key+"']");
+        var icon    = $("*[data-drop-icon='"+key+"']");
+
+        trigger.toggleClass("active closed");
+        icon.toggleClass("active closed");
+        colapse.toggleClass("active closed");
     });
 }
 
@@ -44,7 +46,7 @@ $(document).ready(function(){
 
     // Filters
     checkAllStars();
-
+    // Generic Dropdowns
     dropdowns()
 
 });

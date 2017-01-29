@@ -44,7 +44,7 @@
 						<span class="icon"><i class="fa fa-user" aria-hidden="true"></i></span>
 						<span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
 						<span class="icon">
-							<div id="hamburger-icon">
+							<div id="hamburger-icon" data-drop-trigger="menu">
 								<span></span>
 								<span></span>
 								<span></span>
@@ -55,7 +55,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="header-bottom">
+		<div class="header-bottom" data-drop-colapse="menu">
 			<div class="site-col">
 				<nav class="site-nav">
 					<ul>
@@ -69,7 +69,7 @@
 						<li><a class="item" href="#">Autos</a></li>
 						<li><a class="item" href="#">Cruceros</a></li>
 						<li><a class="item" href="#">OFERTAS</a></li>
-						<li><a class="item" href="#">Más <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
+						<li><a class="item" href="#">Más <i class="fa fa-caret-down hidden-mobile-down" aria-hidden="true"></i></a></li>
 					</ul>
 				</nav>
 			</div>
@@ -84,7 +84,7 @@
 			</nav>
 			<section class="searchbox">
 				<h4 class="searchbox-title hidden-mobile-down">Hoteles disponibles para:</h4>
-				<div class="searchbox-data dropdown-trigger">
+				<div class="searchbox-data ">
 					<ul class="searchbox-data-list hidden-mobile-down">
 						<li>
 							<i class="fa fa-map-marker" aria-hidden="true"></i>
@@ -105,7 +105,7 @@
 					</ul>
 					<a class="link" href="#">
 						Modificar búsqueda
-						<i class="fa fa-caret-down hidden-mobile-up dropdown-icon" aria-hidden="true"></i>
+						<i class="fa fa-caret-down hidden-mobile-up " aria-hidden="true"></i>
 					</a>
 				</div>
 			</section>
@@ -120,19 +120,22 @@
 					</div>
 
 					<section class="filters">
-						<h4 class="filters-title dropdown-trigger">
+						<h4 class="filters-title hidden-mobile-down">
 							Filtrar
-							<i class="fa fa-caret-down hidden-mobile-up dropdown-icon" aria-hidden="true"></i>
 						</h4>
-						<div class="filters-cont dropdown-colapse">
+						<p class="clean-link-box hidden-mobile-up" data-drop-trigger="filtro">
+							Filtrar
+							<i class="fa fa-caret-down hidden-mobile-up" aria-hidden="true" data-drop-icon="filtro"></i>
+						</p>
+						<div class="filters-cont" data-drop-colapse="filtro">
 							<!-- box Filtro by Name -->
 							<div class="generic-box no-margin box-glued">
-								<header class="filter-header dropdown-trigger">
+								<header class="filter-header active" data-drop-trigger="byName">
 									<i class="fa fa-search" aria-hidden="true"></i>
 									<span>Nombre de hotel</span>
-									<i class="fa fa-caret-down pull-right dropdown-icon" aria-hidden="true"></i>
+									<i class="fa fa-caret-down pull-right active" aria-hidden="true" data-drop-icon="byName"></i>
 								</header>
-								<footer class="filter-footer dropdown-colapse">
+								<footer class="filter-footer active" data-drop-colapse="byName">
 									<div class="buttons-set">
 										<input type="text" placeholder="Ingrese el nombre del hotel" />
 										<button class="btn btn-s">Aceptar</button>
@@ -140,13 +143,13 @@
 								</footer>
 							</div>
 							<!-- box Filtro by Price -->
-							<div class="generic-box no-margin box-glued">
-								<header class="filter-header dropdown-trigger">
+							<div class="generic-box no-margin box-glued active" data-drop-trigger="byPrice">
+								<header class="filter-header">
 									<i class="fa fa-usd" aria-hidden="true"></i>
 									<span>Precio por noche</span>
-									<i class="fa fa-caret-down pull-right dropdown-icon" aria-hidden="true"></i>
+									<i class="fa fa-caret-down pull-right active" aria-hidden="true" data-drop-icon="byPrice"></i>
 								</header>
-								<footer class="filter-footer dropdown-colapse">
+								<footer class="filter-footer active" data-drop-colapse="byPrice">
 									<div class="slider-range" id="slider-range"></div>
 									<div class="range-amount">
 										<p id="amount">
@@ -158,12 +161,12 @@
 							</div>
 							<!-- box Filtro by Stars -->
 							<div class="generic-box no-margin">
-								<header class="filter-header dropdown-trigger">
+								<header class="filter-header active" data-drop-trigger="stars">
 									<i class="fa fa-star" aria-hidden="true"></i>
 									<span>Estrellas</span>
-									<i class="fa fa-caret-down pull-right dropdown-icon" aria-hidden="true"></i>
+									<i class="fa fa-caret-down pull-right active" aria-hidden="true" data-drop-icon="stars"></i>
 								</header>
-								<footer class="filter-footer dropdown-colapse">
+								<footer class="filter-footer active" data-drop-colapse="stars">
 									<div class="filter-stars-cont">
 										<label><!-- All stars -->
 											<input type="checkbox" id="check-all-stars"/>
