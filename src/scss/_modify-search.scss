@@ -1,0 +1,45 @@
+.modify-search {
+	display: none;
+
+	background: silver;
+    padding: $spacer-s;
+    margin: $spacer-s 0;
+    @media ( max-width: $mobile ){
+    	margin: 0;
+    }
+
+	.modify-search-form {
+		align-items: center;
+		display: flex;
+    	@media ( max-width: $phablet ){
+			flex-wrap: wrap;
+    	}
+		.item {
+			align-items: center;
+			background-color: white;
+			border: 1px solid $border-color;
+			display: flex;
+			margin: 0 $spacer-xs;
+			padding: $spacer-xs + 2 ;
+			width: 20%;
+			@media ( max-width: $phablet ){
+				margin-bottom: $spacer-s;
+				width: 100%;
+	    	}
+
+			input {
+				@include covert-element;
+				width: 100%;
+			}
+
+			&.last {
+				background-color: transparent;
+				border: none;
+				padding: 0;
+				@media ( max-width: $phablet ){
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}

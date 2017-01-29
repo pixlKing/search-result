@@ -9,7 +9,7 @@ $spacer-xxl:					30px;
 
 // Breackpoints
 $phone:							320px !default;
-$phablet:						769px !default;
+$phablet:						700px !default;
 $tablet:						980px !default;
 $mobile:						1024px !default;
 $desktop:						1360px !default;
@@ -64,6 +64,8 @@ $prefix-for-spec:            true !default;
 
 // Forms
 $select-color:					$grey-dark;
+$generic-inputs-height:			23px;
+$generic-inputs-height-mobile:	37px;
 
 // Buttons
 $btn-base-bg:					$secondary-color;

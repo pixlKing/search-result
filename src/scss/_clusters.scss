@@ -2,14 +2,24 @@
 	@extend .generic-box;
 	display: flex;
 	justify-content: space-between;
-
+	@media ( max-width: $phablet ){
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 
 	.cluster-box-img {
 		min-width: $cluster-box-img-width;
 		position: relative;
+		@media ( max-width: $phablet ){
+			margin-bottom: $spacer-s;
+			text-align: center;
+			width: 100%;
+		}
 
 		img {
-			float: left;
+			@media ( min-width: $phablet + 1){
+				float: left;
+			}
 		}
 
 		.cluster-nav-img {
@@ -39,6 +49,12 @@
 	.cluster-box-center {
 		margin: 0 $spacer-s;
 		width: $cluster-box-center-width;
+		@media ( max-width: $phablet ){
+			border-bottom: 1px dashed $border-color;
+			margin-bottom: $spacer-s;
+			padding-bottom: $spacer-s;
+			width: 100%;
+		}
 
 		.cluster-title {
 			font-size: $font-size-small + 2;
@@ -76,6 +92,13 @@
 		padding: 0 $spacer-l;
 		text-align: center;
 		width: $cluster-box-price-width;
+		@media ( max-width: $mobile ){
+			padding: 0 $spacer-s;
+		}
+		@media ( max-width: $phablet ){
+			border: none;
+			width: 100%;
+		}
 
 		.box-price {
 			margin-bottom: $spacer-xs;

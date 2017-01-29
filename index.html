@@ -82,7 +82,7 @@
 				<a href="#" title="">Hoteles</a>
 				<span>Madrid</span>
 			</nav>
-			<section class="searchbox">
+			<section class="searchbox" data-drop-trigger="search">
 				<h4 class="searchbox-title hidden-mobile-down">Hoteles disponibles para:</h4>
 				<div class="searchbox-data ">
 					<ul class="searchbox-data-list hidden-mobile-down">
@@ -105,9 +105,33 @@
 					</ul>
 					<a class="link" href="#">
 						Modificar búsqueda
-						<i class="fa fa-caret-down hidden-mobile-up " aria-hidden="true"></i>
+						<i class="fa fa-caret-down hidden-mobile-up" aria-hidden="true" data-drop-icon="search"></i>
 					</a>
 				</div>
+			</section>
+			<section class="modify-search" data-drop-colapse="search">
+				<form class="modify-search-form" method="POST" action="">
+					<div class="item">
+						<i class="fa fa-map-marker" aria-hidden="true"></i>
+						<input type="text" value="madrid" />
+					</div>
+					<div class="item">
+						<i class="fa fa-calendar-minus-o" aria-hidden="true"></i>
+						<input type="date" value="2016-20-16" />
+					</div>
+					<div class="item">
+						<i class="fa fa-calendar-plus-o" aria-hidden="true"></i>
+						<input type="date" value="2016-11-30" />
+					</div>
+					<div class="item">
+						<i class="fa fa-user" aria-hidden="true"></i>
+						<input type="text" value="2 huespedes" />
+					</div>
+					<div class="item last">
+						<button class="btn btn-l btn-full">Buscar</button>
+					</div>
+				</form>
+
 			</section>
 
 			<div class="content">

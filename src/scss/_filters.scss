@@ -28,8 +28,10 @@
 	}
 
 	&:hover {
-		color: $link-color-hover;
-		cursor: pointer;
+		@media ( min-width: $mobile + 1 ){
+			color: $link-color-hover;
+			cursor: pointer;
+		}
 	}
 }
 .filter-footer {

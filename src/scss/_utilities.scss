@@ -25,6 +25,11 @@
 	text-align: center;
 }
 
+@mixin covert-element {
+	border: none;
+	background: none;
+}
+
 .ta-center {
 	text-align: center;
 }

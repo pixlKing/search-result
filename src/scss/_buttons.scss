@@ -10,8 +10,10 @@
 	display: inline-block;
 
 	&:hover, &:active, &:focus {
-		background-color: $btn-base-color-hover;
-		color: $btn-base-color;
+		@media ( min-width: $mobile + 1 ){
+			background-color: $btn-base-color-hover;
+			color: $btn-base-color;
+		}
 	}
 }
 

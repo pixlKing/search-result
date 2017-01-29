@@ -65,10 +65,10 @@
 [data-drop-colapse] {
 	//@include dropdown-colapse;
 
-	&.active {
-		@include dropdown-colapse-active;
-	}
 	&.closed {
 		@include dropdown;
+	}
+	&.active {
+		@include dropdown-colapse-active;
 	}
 }

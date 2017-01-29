@@ -1,7 +1,8 @@
 input {
 	border: 1px solid $border-color;
 }
-input[type="text"], input[type="password"], input[type="email"] {
+input[type="text"], input[type="password"], input[type="email"], input[type="date"] {
+	height: $generic-inputs-height;
 	padding: $spacer-xs - 1px;
 }
 label {
