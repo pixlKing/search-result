@@ -471,8 +471,12 @@ html {
 /* line 4, ../../src/scss/_layout.scss */
 .main-content {
   padding: 10px; }
+  @media (max-width: 1024px) {
+    /* line 4, ../../src/scss/_layout.scss */
+    .main-content {
+      padding-top: 0; } }
 
-/* line 7, ../../src/scss/_layout.scss */
+/* line 11, ../../src/scss/_layout.scss */
 .content {
   max-width: 1000px;
   margin-left: auto;
@@ -3732,6 +3736,27 @@ body {
   .generic-box.box-glued, .box-glued.cluster {
     border-bottom: 3px solid #f4f4f4; }
 
+@media only screen and (max-width: 1024px) {
+  /* line 55, ../../src/scss/_generics.scss */
+  .dropdown-trigger.active {
+    display: block; }
+    /* line 58, ../../src/scss/_generics.scss */
+    .dropdown-trigger.active .dropdown-icon {
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      transform: rotate(180deg);
+      -webkit-transition: -webkit-transform 0.3s ease-in-out;
+      -moz-transition: -moz-transform 0.3s ease-in-out;
+      transition: transform 0.3s ease-in-out; }
+
+  /* line 63, ../../src/scss/_generics.scss */
+  .dropdown-colapse {
+    display: none; }
+    /* line 66, ../../src/scss/_generics.scss */
+    .dropdown-colapse.active {
+      display: block; } }
 /* line 1, ../../src/scss/_breadcrumb.scss */
 .breadcrumb {
   font-size: 10px;
@@ -3885,7 +3910,15 @@ select {
       padding: 15px 5px;
       text-align: center; } }
 
-/* line 8, ../../src/scss/_filters.scss */
+@media (max-width: 1024px) {
+  /* line 8, ../../src/scss/_filters.scss */
+  .filters-cont {
+    display: none; }
+    /* line 12, ../../src/scss/_filters.scss */
+    .filters-cont.active {
+      display: block; } }
+
+/* line 17, ../../src/scss/_filters.scss */
 .filter-header {
   -webkit-transition: color 0.3s;
   -moz-transition: color 0.3s;
@@ -3894,43 +3927,45 @@ select {
   transition: color 0.3s;
   color: #2671dd;
   font-size: 12px;
-  font-weight: bold;
-  margin-bottom: 10px; }
-  /* line 15, ../../src/scss/_filters.scss */
+  font-weight: bold; }
+  /* line 23, ../../src/scss/_filters.scss */
   .filter-header i:first-child {
     padding-right: 5px; }
-  /* line 19, ../../src/scss/_filters.scss */
+  /* line 27, ../../src/scss/_filters.scss */
   .filter-header:hover {
     color: #7eabeb;
     cursor: pointer; }
 
-/* line 25, ../../src/scss/_filters.scss */
-.filter-footer .buttons-set {
-  align-items: center;
-  display: flex;
-  justify-content: space-between; }
-  /* line 30, ../../src/scss/_filters.scss */
-  .filter-footer .buttons-set input {
-    width: 100%; }
-  /* line 33, ../../src/scss/_filters.scss */
-  .filter-footer .buttons-set .btn {
-    margin-left: 10px; }
+/* line 32, ../../src/scss/_filters.scss */
+.filter-footer {
+  margin-top: 10px; }
+  /* line 35, ../../src/scss/_filters.scss */
+  .filter-footer .buttons-set {
+    align-items: center;
+    display: flex;
+    justify-content: space-between; }
+    /* line 40, ../../src/scss/_filters.scss */
+    .filter-footer .buttons-set input {
+      width: 100%; }
+    /* line 43, ../../src/scss/_filters.scss */
+    .filter-footer .buttons-set .btn {
+      margin-left: 10px; }
 
-/* line 41, ../../src/scss/_filters.scss */
+/* line 51, ../../src/scss/_filters.scss */
 .filter-stars-cont label {
   align-items: center;
   display: flex;
   padding: 10px 0; }
-  /* line 47, ../../src/scss/_filters.scss */
+  /* line 57, ../../src/scss/_filters.scss */
   .filter-stars-cont label input {
     margin-right: 5px; }
-    /* line 50, ../../src/scss/_filters.scss */
+    /* line 60, ../../src/scss/_filters.scss */
     .filter-stars-cont label input:checked ~ .result-qty {
       font-weight: bold; }
-  /* line 54, ../../src/scss/_filters.scss */
+  /* line 64, ../../src/scss/_filters.scss */
   .filter-stars-cont label .box-stars {
     margin-right: 5px; }
-    /* line 57, ../../src/scss/_filters.scss */
+    /* line 67, ../../src/scss/_filters.scss */
     .filter-stars-cont label .box-stars i {
       color: #fdba12; }
 

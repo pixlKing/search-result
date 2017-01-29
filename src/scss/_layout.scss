@@ -3,6 +3,10 @@
 }
 .main-content {
 	padding: $content-spacer;
+
+	@media ( max-width: $mobile ){
+		padding-top: 0;
+	}
 }
 .content {
 	@include outer-container;

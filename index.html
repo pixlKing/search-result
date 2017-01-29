@@ -19,15 +19,25 @@
 					</a>
 					<nav class="user-nav desktop hidden-mobile-down">
 						<ul>
-							<li><a class="item" href="#"><i class="fa fa-user" aria-hidden="true"></i>Ingresar</a></li>
+							<li>
+								<a class="item" href="#">
+									<i class="fa fa-user" aria-hidden="true"></i>Ingresar
+								</a>
+							</li>
 							<li>
 								<a class="item club-almundo" href="#">
 									<img src="/almundo/dist/img/logo-clubalmundo.svg" alt="clubalmundo" />
 								</a>
 							</li>
-							<li><a class="item" href="#">Sucursales</a></li>
-							<li><span class="item">Llamanos <i class="fa fa-caret-down" aria-hidden="true"></i></span></li>
-							<li><a class="item" href="#">Ayuda</a></li>
+							<li>
+								<a class="item" href="#">Sucursales</a>
+							</li>
+							<li>
+								<span class="item">Llamanos <i class="fa fa-caret-down" aria-hidden="true"></i></span>
+							</li>
+							<li>
+								<a class="item" href="#">Ayuda</a>
+							</li>
 						</ul>
 					</nav>
 					<nav class="user-nav mobile hidden-mobile-up">
@@ -74,7 +84,7 @@
 			</nav>
 			<section class="searchbox">
 				<h4 class="searchbox-title hidden-mobile-down">Hoteles disponibles para:</h4>
-				<div class="searchbox-data">
+				<div class="searchbox-data dropdown-trigger">
 					<ul class="searchbox-data-list hidden-mobile-down">
 						<li>
 							<i class="fa fa-map-marker" aria-hidden="true"></i>
@@ -95,7 +105,7 @@
 					</ul>
 					<a class="link" href="#">
 						Modificar búsqueda
-						<i class="fa fa-caret-down hidden-mobile-up" aria-hidden="true"></i>
+						<i class="fa fa-caret-down hidden-mobile-up dropdown-icon" aria-hidden="true"></i>
 					</a>
 				</div>
 			</section>
@@ -110,108 +120,106 @@
 					</div>
 
 					<section class="filters">
-						<h4 class="filters-title">
+						<h4 class="filters-title dropdown-trigger">
 							Filtrar
-							<i class="fa fa-caret-down hidden-mobile-up" aria-hidden="true"></i>
+							<i class="fa fa-caret-down hidden-mobile-up dropdown-icon" aria-hidden="true"></i>
 						</h4>
-
-						<!-- box Filtro by Name -->
-						<div class="generic-box no-margin box-glued">
-							<header class="filter-header">
-								<i class="fa fa-search" aria-hidden="true"></i>
-								<span>Nombre de hotel</span>
-								<i class="fa fa-caret-down pull-right" aria-hidden="true"></i>
-							</header>
-							<footer class="filter-footer">
-								<div class="buttons-set">
-									<input type="text" placeholder="Ingrese el nombre del hotel" />
-									<button class="btn btn-s">Aceptar</button>
-								</div>
-							</footer>
-						</div>
-						<!-- box Filtro by Price -->
-						<div class="generic-box no-margin box-glued">
-							<header class="filter-header">
-								<i class="fa fa-usd" aria-hidden="true"></i>
-								<span>Precio por noche</span>
-								<i class="fa fa-caret-down pull-right" aria-hidden="true"></i>
-							</header>
-							<footer class="filter-footer">
-
-								<div class="slider-range" id="slider-range"></div>
-								<div class="range-amount">
-									<p id="amount">
-										<b class="min"></b>
-										<b class="max"></b>
-									</p>
-									<!--<input type="text" id="amount" readonly />-->
-								</div>
-
-							</footer>
-						</div>
-						<!-- box Filtro by Stars -->
-						<div class="generic-box no-margin">
-							<header class="filter-header">
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<span>Estrellas</span>
-								<i class="fa fa-caret-down pull-right" aria-hidden="true"></i>
-							</header>
-							<footer class="filter-footer">
-								<div class="filter-stars-cont">
-									<label><!-- All stars -->
-										<input type="checkbox" />
-										<span class="box-stars">
-											Todas las estrellas
-										</span>
-										<span class="result-qty">(284)</span>
-									</label>
-									<label><!-- 5 stars -->
-										<input type="checkbox" />
-										<span class="box-stars">
-											<i class="fa fa-star" aria-hidden="true"></i>
-											<i class="fa fa-star" aria-hidden="true"></i>
-											<i class="fa fa-star" aria-hidden="true"></i>
-											<i class="fa fa-star" aria-hidden="true"></i>
-											<i class="fa fa-star" aria-hidden="true"></i>
-										</span>
-										<span class="result-qty">(25)</span>
-									</label>
-									<label><!-- 4 stars -->
-										<input type="checkbox" />
-										<span class="box-stars">
-											<i class="fa fa-star" aria-hidden="true"></i>
-											<i class="fa fa-star" aria-hidden="true"></i>
-											<i class="fa fa-star" aria-hidden="true"></i>
-											<i class="fa fa-star" aria-hidden="true"></i>
-										</span>
-										<span class="result-qty">(128)</span>
-									</label>
-									<label><!-- 3 stars -->
-										<input type="checkbox" />
-										<span class="box-stars">
-											<i class="fa fa-star" aria-hidden="true"></i>
-											<i class="fa fa-star" aria-hidden="true"></i>
-											<i class="fa fa-star" aria-hidden="true"></i>
-										</span>
-										<span class="result-qty">(93)</span>
-									</label>
-									<label><!-- 2 stars -->
-										<input type="checkbox" />
-										<span class="box-stars">
-											<i class="fa fa-star" aria-hidden="true"></i>
-											<i class="fa fa-star" aria-hidden="true"></i>
-										</span>
-										<span class="result-qty">(31)</span>
-									</label>
-									<label><!-- 1 stars -->
-										<input type="checkbox" />
-										<span class="box-stars">
-											<i class="fa fa-star" aria-hidden="true"></i>
-										</span>
-										<span class="result-qty">(7)</span>
-									</label>
-								</div>
-							</footer>
+						<div class="filters-cont dropdown-colapse">
+							<!-- box Filtro by Name -->
+							<div class="generic-box no-margin box-glued">
+								<header class="filter-header dropdown-trigger">
+									<i class="fa fa-search" aria-hidden="true"></i>
+									<span>Nombre de hotel</span>
+									<i class="fa fa-caret-down pull-right dropdown-icon" aria-hidden="true"></i>
+								</header>
+								<footer class="filter-footer dropdown-colapse">
+									<div class="buttons-set">
+										<input type="text" placeholder="Ingrese el nombre del hotel" />
+										<button class="btn btn-s">Aceptar</button>
+									</div>
+								</footer>
+							</div>
+							<!-- box Filtro by Price -->
+							<div class="generic-box no-margin box-glued">
+								<header class="filter-header dropdown-trigger">
+									<i class="fa fa-usd" aria-hidden="true"></i>
+									<span>Precio por noche</span>
+									<i class="fa fa-caret-down pull-right dropdown-icon" aria-hidden="true"></i>
+								</header>
+								<footer class="filter-footer dropdown-colapse">
+									<div class="slider-range" id="slider-range"></div>
+									<div class="range-amount">
+										<p id="amount">
+											<b class="min"></b>
+											<b class="max"></b>
+										</p>
+									</div>
+								</footer>
+							</div>
+							<!-- box Filtro by Stars -->
+							<div class="generic-box no-margin">
+								<header class="filter-header dropdown-trigger">
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<span>Estrellas</span>
+									<i class="fa fa-caret-down pull-right dropdown-icon" aria-hidden="true"></i>
+								</header>
+								<footer class="filter-footer dropdown-colapse">
+									<div class="filter-stars-cont">
+										<label><!-- All stars -->
+											<input type="checkbox" id="check-all-stars"/>
+											<span class="box-stars">
+												Todas las estrellas
+											</span>
+											<span class="result-qty">(284)</span>
+										</label>
+										<label><!-- 5 stars -->
+											<input type="checkbox" />
+											<span class="box-stars">
+												<i class="fa fa-star" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
+											</span>
+											<span class="result-qty">(25)</span>
+										</label>
+										<label><!-- 4 stars -->
+											<input type="checkbox" />
+											<span class="box-stars">
+												<i class="fa fa-star" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
+											</span>
+											<span class="result-qty">(128)</span>
+										</label>
+										<label><!-- 3 stars -->
+											<input type="checkbox" />
+											<span class="box-stars">
+												<i class="fa fa-star" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
+											</span>
+											<span class="result-qty">(93)</span>
+										</label>
+										<label><!-- 2 stars -->
+											<input type="checkbox" />
+											<span class="box-stars">
+												<i class="fa fa-star" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
+											</span>
+											<span class="result-qty">(31)</span>
+										</label>
+										<label><!-- 1 stars -->
+											<input type="checkbox" />
+											<span class="box-stars">
+												<i class="fa fa-star" aria-hidden="true"></i>
+											</span>
+											<span class="result-qty">(7)</span>
+										</label>
+									</div>
+								</footer>
+							</div>
 						</div>
 					</section>
 

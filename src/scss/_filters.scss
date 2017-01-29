@@ -5,12 +5,20 @@
 		@include clean-link-box;
 	}
 }
+.filters-cont {
+	@media ( max-width: $mobile ){
+		@include dropdown;// hide in mobile for state closed
+
+		&.active {
+			@include dropdown-active;//show when is active
+		}
+	}
+}
 .filter-header {
 	@include transitions(transition, color $animation-speed);
 	color: $link-color;
 	font-size: $font-size-small;
     font-weight: bold;
-    margin-bottom: $spacer-s;
 
 	i:first-child {
 		padding-right: $spacer-xs;
@@ -22,6 +30,8 @@
 	}
 }
 .filter-footer {
+    margin-top: $spacer-s;
+
 	.buttons-set {
 		align-items: center;
 		display: flex;
