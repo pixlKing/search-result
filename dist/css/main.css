@@ -4024,9 +4024,8 @@ select {
     .cluster .cluster-box-img .cluster-nav-img .prev, .cluster .cluster-box-img .cluster-nav-img .next {
       color: white;
       font-size: 20px;
-      margin-top: -30px;
       position: absolute;
-      top: 50%;
+      top: 70px;
       cursor: pointer; }
       /* line 24, ../../src/scss/_clusters.scss */
       .cluster .cluster-box-img .cluster-nav-img .prev:before, .cluster .cluster-box-img .cluster-nav-img .next:before {

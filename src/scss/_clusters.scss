@@ -16,9 +16,9 @@
 			.prev, .next {
 				color: white;
 				font-size: $spacer-l;
-				margin-top: $spacer-xxl * -1;
+				//margin-top: $spacer-xxl * -1; // TODO: Matt (deberia atarlo al alto dinamico del box)
 				position: absolute;
-				top: 50%;
+				top: $cluster-nav-pos;
 				cursor: pointer;
 
 				&:before {
