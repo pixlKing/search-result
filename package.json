@@ -4,6 +4,7 @@
   "description": "",
   "main": "Gruntfile.js",
   "dependencies": {
+    "express": "^4.14.1",
     "grunt": "^1.0.1"
   },
   "devDependencies": {
