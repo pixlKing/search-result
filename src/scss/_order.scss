@@ -4,6 +4,10 @@
 	justify-content: flex-end;
 	margin-bottom: $spacer-s;
 
+	@media ( max-width: $mobile ){
+		justify-content: center;
+	}
+
 	.order-box-title {
 		padding-right: $spacer-xs;
 	}

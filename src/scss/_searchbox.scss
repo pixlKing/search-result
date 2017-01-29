@@ -3,14 +3,20 @@
 	margin-bottom: $spacer-s;
 	padding: $searchbox-padding;
 
+	@media ( max-width: $mobile ){
+		@include clean-link-box();
+	}
+
 	.searchbox-title {
 		font-weight: normal;
 		font-size: $font-size-base;
 		margin: 0 0 $spacer-s;
 	}
 	.searchbox-data {
-		ul {
+		.searchbox-data-list {
 			display: flex;
+			float: left;
+
 			li {
 				padding-right: $spacer-m;
 				i {

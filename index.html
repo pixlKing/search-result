@@ -17,7 +17,7 @@
 					<a class="site-logo" href="/almundo">
 						<img src="/almundo/dist/img/logo-almundo.svg" alt="Almundo logo" />
 					</a>
-					<nav class="user-nav">
+					<nav class="user-nav desktop hidden-mobile-down">
 						<ul>
 							<li><a class="item" href="#"><i class="fa fa-user" aria-hidden="true"></i>Ingresar</a></li>
 							<li>
@@ -29,6 +29,18 @@
 							<li><span class="item">Llamanos <i class="fa fa-caret-down" aria-hidden="true"></i></span></li>
 							<li><a class="item" href="#">Ayuda</a></li>
 						</ul>
+					</nav>
+					<nav class="user-nav mobile hidden-mobile-up">
+						<span class="icon"><i class="fa fa-user" aria-hidden="true"></i></span>
+						<span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+						<span class="icon">
+							<div id="hamburger-icon">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</span>
 					</nav>
 				</div>
 			</div>
@@ -55,47 +67,53 @@
 	</header>
 	<div class="main-content">
 		<div class="content">
-			<nav class="breadcrumb">
+			<nav class="breadcrumb hidden-mobile-down">
 				<a href="#" title="">Home</a>
 				<a href="#" title="">Hoteles</a>
 				<span>Madrid</span>
 			</nav>
 			<section class="searchbox">
-				<h4 class="searchbox-title">Hoteles disponibles para:</h4>
+				<h4 class="searchbox-title hidden-mobile-down">Hoteles disponibles para:</h4>
 				<div class="searchbox-data">
-					<ul>
-						<li><i class="fa fa-map-marker" aria-hidden="true"></i><span>madrid</span></li>
-						<li><i class="fa fa-calendar-minus-o" aria-hidden="true"></i><span>16/11/2016</span></li>
-						<li><i class="fa fa-calendar-plus-o" aria-hidden="true"></i><span>30/11/2016</span></li>
-						<li><i class="fa fa-user" aria-hidden="true"></i><span>2 huéspedes</span></li>
+					<ul class="searchbox-data-list hidden-mobile-down">
 						<li>
-							<a class="link" href="#">Modificar búsqueda</a>
+							<i class="fa fa-map-marker" aria-hidden="true"></i>
+							<span>madrid</span>
+						</li>
+						<li>
+							<i class="fa fa-calendar-minus-o" aria-hidden="true"></i>
+							<span>16/11/2016</span>
+						</li>
+						<li>
+							<i class="fa fa-calendar-plus-o" aria-hidden="true"></i>
+							<span>30/11/2016</span>
+						</li>
+						<li>
+							<i class="fa fa-user" aria-hidden="true"></i>
+							<span>2 huéspedes</span>
 						</li>
 					</ul>
+					<a class="link" href="#">
+						Modificar búsqueda
+						<i class="fa fa-caret-down hidden-mobile-up" aria-hidden="true"></i>
+					</a>
 				</div>
-			</section>
-			<section class="order-box">
-				<span class="order-box-title">Ordenar</span>
-				<select class="order-box-select">
-					<option>Más relevantes</option>
-					<option>Precio más bajo</option>
-					<option>Precio más alto</option>
-					<option>Menos estrellas</option>
-					<option>Más estrellas</option>
-				</select>
 			</section>
 
 			<div class="content">
 				<!-- Col left -->
 				<aside class="filters-col">
 
-					<div class="generic-box no-padding">
-						<img src="/almundo/dist/img/result-map.png" alt="result map"/>
+					<div class="result-map-box generic-box no-padding">
+						<img class="hidden-mobile-down" src="/almundo/dist/img/result-map.png" alt="result map"/>
 						<div class="link button-group ta-center">Ver hoteles en el mapa</div>
 					</div>
 
 					<section class="filters">
-						<h4 class="filters-title">Filtrar</h4>
+						<h4 class="filters-title">
+							Filtrar
+							<i class="fa fa-caret-down hidden-mobile-up" aria-hidden="true"></i>
+						</h4>
 
 						<!-- box Filtro by Name -->
 						<div class="generic-box no-margin box-glued">
@@ -200,6 +218,18 @@
 				</aside>
 				<!-- Col right -->
 				<section class="grid">
+
+					<section class="order-box">
+						<span class="order-box-title">Ordenar</span>
+						<select class="order-box-select">
+							<option>Más relevantes</option>
+							<option>Precio más bajo</option>
+							<option>Precio más alto</option>
+							<option>Menos estrellas</option>
+							<option>Más estrellas</option>
+						</select>
+					</section>
+
 					<ng-include src="'src/views/includes/cluster.html'"></ng-include>
 					<ng-include src="'src/views/includes/cluster-2.html'"></ng-include>
 					<ng-include src="'src/views/includes/cluster-3.html'"></ng-include>

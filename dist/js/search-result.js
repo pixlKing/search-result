@@ -1,6 +1,7 @@
 // Price Range slider bar
 $( function() {
-    $( "#slider-range" ).slider({
+    var sliderRange = $( "#slider-range" );
+    sliderRange.slider({
         range: true,
         min: 0,
         max: 2000,
@@ -10,7 +11,12 @@ $( function() {
             $("#amount .max").html( "$" + ui.values[ 1 ] );
         }
     });
-    $("#amount .min").html( "$" + $( "#slider-range" ).slider( "values", 0 ) );
-    $("#amount .max").html( "$" + $( "#slider-range" ).slider( "values", 1 ) );
-    //$( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) + " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+    $("#amount .min").html( "$" + sliderRange.slider( "values", 0 ) );
+    $("#amount .max").html( "$" + sliderRange.slider( "values", 1 ) );
 } );
+
+$(document).ready(function(){
+    $('#hamburger-icon').click(function(){
+        $(this).toggleClass('open');
+    });
+});

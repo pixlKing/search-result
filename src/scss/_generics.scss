@@ -14,3 +14,17 @@
 		border-bottom: $border-m solid $grey-light;
 	}
 }
+
+@mixin clean-link-box {
+	@include box-shadow(0,0,0,0,transparent);
+	background: none;
+	border: none;
+	border-bottom: 1px solid $border-color;
+	color: $link-color;
+	cursor: pointer;
+	font-size: $font-size-medium - 2;
+	font-weight: normal;
+	margin: 0;
+	padding: $spacer-m $spacer-xs;
+	text-align: center;
+}

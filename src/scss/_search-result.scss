@@ -1,7 +1,19 @@
 .filters-col {
 	@include span-columns(3);
+
+	@media ( min-width: $mobile + 1){
+		padding-top: $spacer-xxl + 7;
+	}
+	@media ( max-width: $mobile ){
+		@include span-columns(12);
+		margin-bottom: $spacer-l;
+	}
 }
 .grid {
 	@include span-columns(9);
 	@include omega();
+
+	@media ( max-width: $mobile ){
+		@include span-columns(12);
+	}
 }

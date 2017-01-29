@@ -1,0 +1,9 @@
+.result-map-box.result-map-box {// Repito la clase para mas gerarquia
+	@media ( max-width: $mobile ){
+		@include clean-link-box;
+
+		.button-group {
+			padding: 0;
+		}
+	}
+}

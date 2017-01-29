@@ -6,7 +6,9 @@ a, .link {
 	text-decoration: none;
 
 	&:hover {
-		color: $link-color-hover;
+		@media ( min-width: $mobile + 1){
+			color: $link-color-hover;
+		}
 	}
 }
 img {

@@ -1,5 +1,9 @@
 .filters-title {
 	margin-bottom: $spacer-xs;
+
+	@media ( max-width: $mobile ){
+		@include clean-link-box;
+	}
 }
 .filter-header {
 	@include transitions(transition, color $animation-speed);

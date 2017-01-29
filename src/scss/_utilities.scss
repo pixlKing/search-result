@@ -1,3 +1,30 @@
+@mixin hide-element {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+@mixin show-element {
+  display: block !important;
+  visibility: visible !important;
+}
+
+@mixin hide-element-simple {
+  display: none !important;
+}
+
+@mixin hide-scrollbar {
+  overflow: hidden;
+}
+
+@mixin make-pseudo-element($display: inline-block) {
+  content: "";
+  display: $display;
+}
+
+@mixin ta-center {
+	text-align: center;
+}
+
 .ta-center {
 	text-align: center;
 }
@@ -6,4 +33,38 @@
 }
 .pull-left {
 	float: left;
+}
+
+// Responsive utilities
+.hidden-phone-down {
+
+}
+.hidden-phablet-down {
+
+}
+.hidden-tablet-down {
+
+}
+.hidden-mobile-down {
+	@media ( max-width: $mobile ){
+		@include hide-element();
+	}
+}
+.hidden-desktop-down {
+}
+
+
+
+.hidden-phone-up {
+}
+.hidden-phablet-up {
+}
+.hidden-tablet-up {
+}
+.hidden-mobile-up {
+	@media ( min-width: $mobile + 1){
+		@include hide-element();
+	}
+}
+.hidden-desktop-up {
 }

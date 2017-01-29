@@ -1,13 +1,19 @@
 ﻿.site-header {
 	background: url(/almundo/dist/img/site-bkg.jpg) center top no-repeat;
 	background-size: cover;
-	margin-bottom: $spacer-s;
+	@media ( min-width: $mobile + 1){
+		margin-bottom: $spacer-s;
+	}
 
 	a, .item {
 		color: white;
 	}
 
 	.header-top {
+		@media ( max-width: $mobile ){
+			padding-left: $spacer-s;
+			padding-right: $spacer-s;
+		}
 		.header-top-inner {
 			align-items: center;
 			display: flex;
@@ -15,9 +21,18 @@
 			padding: $header-top-spacer 0;
 
 			.site-logo {
-				@include transitions(transition, opacity .3s);
+				@include transitions(transition, opacity $animation-speed);
+
 				&:hover {
 					opacity: .8;
+				}
+
+				img {
+					float: left;
+				}
+
+				@media ( max-width: $mobile ){
+					max-width: 100px;
 				}
 			}
 
@@ -31,7 +46,7 @@
 						padding: 0 $header-user-navlist-spacer;
 
 						.item {
-							@include transitions(transition, color .3s);
+							@include transitions(transition, color $animation-speed);
 
 							&:hover {
 								color: $primary-color;
@@ -54,12 +69,28 @@
 					}
 				}
 			}
+			.user-nav.mobile {
+				color: white;
+    			font-size: $font-size-large - 4;
+    			padding: $spacer-xs 0;
+
+    			.icon {
+    				float: left;
+    				margin: 0 $spacer-s;
+    			}
+			}
 		}
+
 	}
 	.header-bottom {
 		// Site navigation
 		@include bg-opacity(white, 0.1);
 		border-top: 1px solid rgba(white, .4);
+
+		@media only screen and ( max-width: $mobile ){
+			display: none;
+		}
+
 		.site-nav {
 			ul {
 				display: flex;
@@ -82,3 +113,5 @@
 		}
 	}
 }
+
+@import 'hamburger';

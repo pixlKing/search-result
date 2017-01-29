@@ -6,6 +6,14 @@ $spacer-l:						20px;
 $spacer-xl:						25px;
 $spacer-xxl:					30px;
 
+
+// Breackpoints
+$phone:							320px !default;
+$phablet:						769px !default;
+$tablet:						980px !default;
+$mobile:						1024px !default;
+$desktop:						1360px !default;
+
 // Global borders
 $border-m:						$spacer-xs - 2;
 
@@ -45,6 +53,14 @@ $font-size-large:				$font-size-base * 1.5 !default; // ~24px
 
 $site-font-family:				'Roboto', sans-serif;
 $site-font-size:				$font-size-small;
+
+
+/// Global variables to enable or disable vendor prefixes
+$prefix-for-webkit:          true !default;
+$prefix-for-mozilla:         true !default;
+$prefix-for-microsoft:       true !default;
+$prefix-for-opera:           true !default;
+$prefix-for-spec:            true !default;
 
 // Forms
 $select-color:					$grey-dark;
