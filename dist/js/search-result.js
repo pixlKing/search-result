@@ -20,7 +20,7 @@ function checkAllStars(){
     $('#check-all-stars').click(function(){
         $(this).closest('.filter-stars-cont').find('input:checkbox:not(:checked)').trigger('click');
     });
-}
+};
 
 //Generic dropdown functionality
 function dropdowns(){
@@ -35,13 +35,8 @@ function dropdowns(){
         icon.toggleClass("active closed");
         colapse.toggleClass("active closed");
     });
-}
-// Cluster stars
-function clusterStars(){
-    $(".cluster").each(function(){
-        $(this).addClass('TESTTTTT');
-    });
-}
+};
+
 
 $(document).ready(function(){
     // Header hamburger button
@@ -55,5 +50,4 @@ $(document).ready(function(){
     // Generic Dropdowns
     dropdowns();
 
-    clusterStars();
 });

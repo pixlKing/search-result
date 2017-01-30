@@ -10,11 +10,10 @@ app.controller("appController", function ($scope, $http) {
 		console.log(data.hotels[0].stars);
 
 	});
-})
+});
 
 
 
-/*
 
 app.filter('range', function() {
   return function(input, total) {
@@ -25,9 +24,10 @@ app.filter('range', function() {
   };
 });
 
-function Main($scope){
+function Estrellas($scope){
 }
-*/
+
+/*
 app.filter('range', function() {
   return function() {
     return '5';
@@ -35,3 +35,4 @@ app.filter('range', function() {
 });
 function Estrellas($scope){
 }
+*/
