@@ -17,8 +17,9 @@
 
 <ul ng-controller="appController">
 	<li ng-repeat="data in datos">
-		<p>{{ data.nombre }}</p>
-		<p>{{ data.apellido }}</p>
+		<p>{{ data[0].name }}</p>
+		<p>{{ data[0].stars }}</p>
+		<p>{{ data[0].price }}</p>
 	</li>
 </ul>
 
