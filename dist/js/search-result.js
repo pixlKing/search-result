@@ -36,6 +36,12 @@ function dropdowns(){
         colapse.toggleClass("active closed");
     });
 }
+// Cluster stars
+function clusterStars(){
+    $(".cluster").each(function(){
+        $(this).addClass('TESTTTTT');
+    });
+}
 
 $(document).ready(function(){
     // Header hamburger button
@@ -47,6 +53,7 @@ $(document).ready(function(){
     // Filters
     checkAllStars();
     // Generic Dropdowns
-    dropdowns()
+    dropdowns();
 
+    clusterStars();
 });

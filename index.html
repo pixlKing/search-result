@@ -12,19 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="dist/css/main.css">
 </head>
-<body>
-
-
-<ul ng-controller="appController">
-	<li ng-repeat="data in datos">
-		<p>{{ data[0].name }}</p>
-		<p>{{ data[0].stars }}</p>
-		<p>{{ data[0].price }}</p>
-	</li>
-</ul>
-
-
-
+<body ng-controller="appController">
 
 
 
@@ -284,8 +272,8 @@
 					</section>
 
 					<ng-include src="'src/views/includes/cluster.html'"></ng-include>
-					<ng-include src="'src/views/includes/cluster-2.html'"></ng-include>
-					<ng-include src="'src/views/includes/cluster-3.html'"></ng-include>
+					<!--<ng-include src="'src/views/includes/cluster-2.html'"></ng-include>
+					<ng-include src="'src/views/includes/cluster-3.html'"></ng-include>-->
 				</section>
 			</div>
 

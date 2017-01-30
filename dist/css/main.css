@@ -531,14 +531,18 @@ body {
 .pull-left {
   float: left; }
 
+/* line 44, ../../src/scss/_utilities.scss */
+.hide-element-simple {
+  display: none !important; }
+
 @media (max-width: 1024px) {
-  /* line 53, ../../src/scss/_utilities.scss */
+  /* line 59, ../../src/scss/_utilities.scss */
   .hidden-mobile-down {
     display: none !important;
     visibility: hidden !important; } }
 
 @media (min-width: 1025px) {
-  /* line 69, ../../src/scss/_utilities.scss */
+  /* line 75, ../../src/scss/_utilities.scss */
   .hidden-mobile-up {
     display: none !important;
     visibility: hidden !important; } }

@@ -1,4 +1,4 @@
-<article class="cluster generic-box">
+<article class="cluster generic-box" ng-repeat="data in hotels">
 	<figure class="cluster-box-img">
 		<div class="flags">
 			<div class="flag recomendado">¡Hotel recomendado!</div>
@@ -13,11 +13,10 @@
 	</figure>
 	<div class="cluster-box-center">
 		<h1 class="cluster-title">
-			<a href="#" title="Ver hotel">Hotel Emperador</a>
+			<a href="#" title="Ver hotel">{{ data.name }}</a>
 		</h1>
+		<div class="meta-stars hide-element-simple">{{data.stars}}</div>
 		<div class="cluster-stars">
-			<i class="fa fa-star" aria-hidden="true"></i>
-			<i class="fa fa-star" aria-hidden="true"></i>
 			<i class="fa fa-star" aria-hidden="true"></i>
 		</div>
 		<div class="meal-plan">
@@ -36,7 +35,7 @@
 	<div class="cluster-box-price">
 		<div class="box-price">
 			<p class="text price-per-night">Precio por noche por habitación</p>
-			<div class="regular-price">ARS <b class="price">1.596</b></div>
+			<div class="regular-price">ARS <b class="price">{{ data.price }}</b></div>
 			<p class="text taxes">Impuestos y tasas no incluidos</p>
 		</div>
 		<a class="btn btn-l btn-full show-article" href="#">Ver hotel</a>
