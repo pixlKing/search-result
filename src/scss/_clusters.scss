@@ -129,4 +129,26 @@
 			}
 		}
 	}
+	.cluster-stars-bar {
+		background: url('../img/stars-bar.png') 0 0 repeat;
+		display: inline-block;
+		height: $stars-bar-height;
+		width: $stars-bar-width;
+
+		$ancho: $star-fill-width;
+		@for $i from 0 through 5{
+			&.star-fill-#{$i} {
+				width: $ancho * $i;
+			}
+		}
+
+		/*
+		&.star-fill-0 { width: 0; }
+		&.star-fill-1 { width: $star-fill-width * 1; }
+		&.star-fill-2 { width: $star-fill-width * 2; }
+		&.star-fill-3 { width: $star-fill-width * 3; }
+		&.star-fill-4 { width: $star-fill-width * 4; }
+		&.star-fill-5 { width: $star-fill-width * 5; }
+		*/
+	}
 }

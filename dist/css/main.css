@@ -4181,6 +4181,38 @@ select {
         /* line 126, ../../src/scss/_clusters.scss */
         .cluster .cluster-box-price .payment-methods .text:last-child {
           margin-bottom: 0; }
+  /* line 132, ../../src/scss/_clusters.scss */
+  .cluster .cluster-stars-bar {
+    background: url("../img/stars-bar.png") 0 0 repeat;
+    display: inline-block;
+    height: 12px;
+    width: 76px;
+    /*
+    &.star-fill-0 { width: 0; }
+    &.star-fill-1 { width: $star-fill-width * 1; }
+    &.star-fill-2 { width: $star-fill-width * 2; }
+    &.star-fill-3 { width: $star-fill-width * 3; }
+    &.star-fill-4 { width: $star-fill-width * 4; }
+    &.star-fill-5 { width: $star-fill-width * 5; }
+    */ }
+    /* line 140, ../../src/scss/_clusters.scss */
+    .cluster .cluster-stars-bar.star-fill-0 {
+      width: 0px; }
+    /* line 140, ../../src/scss/_clusters.scss */
+    .cluster .cluster-stars-bar.star-fill-1 {
+      width: 16px; }
+    /* line 140, ../../src/scss/_clusters.scss */
+    .cluster .cluster-stars-bar.star-fill-2 {
+      width: 32px; }
+    /* line 140, ../../src/scss/_clusters.scss */
+    .cluster .cluster-stars-bar.star-fill-3 {
+      width: 48px; }
+    /* line 140, ../../src/scss/_clusters.scss */
+    .cluster .cluster-stars-bar.star-fill-4 {
+      width: 64px; }
+    /* line 140, ../../src/scss/_clusters.scss */
+    .cluster .cluster-stars-bar.star-fill-5 {
+      width: 80px; }
 
 /* line 1, ../../src/scss/_flags.scss */
 .flags {

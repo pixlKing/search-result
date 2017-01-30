@@ -11,12 +11,12 @@
 			<i class="fa fa-chevron-circle-right next" aria-hidden="true"></i>
 		</div>
 	</figure>
-	<div class="cluster-box-center" ng-controller="Estrellas">
+	<div class="cluster-box-center">
 		<h1 class="cluster-title">
 			<a href="#" title="Ver hotel">{{ data.name }}</a>
 		</h1>
 		<div class="cluster-stars">
-			<i ng-repeat="star in hotels" class="fa fa-star" aria-hidden="true"></i>
+			<i class="cluster-stars-bar star-fill-{{data.stars}}"></i>
 		</div>
 		<div class="meal-plan">
 			<i class="fa fa-bed" aria-hidden="true"></i>
