@@ -141,14 +141,5 @@
 				width: $ancho * $i;
 			}
 		}
-
-		/*
-		&.star-fill-0 { width: 0; }
-		&.star-fill-1 { width: $star-fill-width * 1; }
-		&.star-fill-2 { width: $star-fill-width * 2; }
-		&.star-fill-3 { width: $star-fill-width * 3; }
-		&.star-fill-4 { width: $star-fill-width * 4; }
-		&.star-fill-5 { width: $star-fill-width * 5; }
-		*/
 	}
 }

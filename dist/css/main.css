@@ -4186,15 +4186,7 @@ select {
     background: url("../img/stars-bar.png") 0 0 repeat;
     display: inline-block;
     height: 12px;
-    width: 76px;
-    /*
-    &.star-fill-0 { width: 0; }
-    &.star-fill-1 { width: $star-fill-width * 1; }
-    &.star-fill-2 { width: $star-fill-width * 2; }
-    &.star-fill-3 { width: $star-fill-width * 3; }
-    &.star-fill-4 { width: $star-fill-width * 4; }
-    &.star-fill-5 { width: $star-fill-width * 5; }
-    */ }
+    width: 76px; }
     /* line 140, ../../src/scss/_clusters.scss */
     .cluster .cluster-stars-bar.star-fill-0 {
       width: 0px; }
