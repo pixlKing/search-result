@@ -8,3 +8,19 @@ app.controller("appController", function ($scope, $http) {
 
 	});
 });
+
+app.filter('searchFor', function(){
+    return function(arr, searchString){
+        if(!searchString){
+            return arr;
+        }
+        var result = [];
+        searchString = searchString.toLowerCase();
+        angular.forEach(arr, function(data){
+            if(data.name.toLowerCase().indexOf(searchString) !== -1){
+            result.push(data);
+        }
+        });
+        return result;
+    };
+});
