@@ -9,6 +9,7 @@ app.controller("appController", function ($scope, $http) {
 	});
 });
 
+// Search by Name
 app.filter('searchFor', function(){
     return function(arr, searchString){
         if(!searchString){
@@ -25,21 +26,24 @@ app.filter('searchFor', function(){
     };
 });
 
+// Filter by stars
 function StarsCtrl($scope) {
     $scope.starsIncludes = [];
 
     $scope.includeStars = function(stars) {
         var i = $.inArray(stars, $scope.starsIncludes);
-        if (i > -1) {
+        if (i > -1) {// Si SI está
             $scope.starsIncludes.splice(i, 1);
         } else {
-            $scope.starsIncludes.push(stars);
+            $scope.starsIncludes.push(stars);//lo mete en el array
         }
     }
     $scope.starsFilter = function(app) {
         if ($scope.starsIncludes.length > 0) {
-            if ($.inArray(app.stars, $scope.starsIncludes) < 0)
+            if ($.inArray(app.stars, $scope.starsIncludes) < 0){
+
                 return;
+            }
         }
         return app;
     }
