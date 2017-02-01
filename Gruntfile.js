@@ -21,23 +21,16 @@ module.exports = function(grunt) {
                 options: {
                     sassDir: "src/scss",
                     cssDir: "dist/css",
+                    outputStyle: "compressed",
                     environment: "production"
                 }
             }
         },
+
         clean: {
             main: ['dist/css']
         },
-        /*
-        sprite: {
-            all: {
-                src: 'src/sprites/*.png',
-                dest: 'dist/sprite.png',
-                destCss: 'src/sprites/_sprites.scss',
-                imgPath: 'sprite.png'
-            }
-        },
-        */
+
         copy: {
             main: {
                 files: [
@@ -58,10 +51,17 @@ module.exports = function(grunt) {
                         cwd: 'src/js/',
                         src: ['**'],
                         dest: "dist/js/"
+                    },
+                    {//copia views
+                        expand: true,
+                        cwd: 'src/views/',
+                        src: ['**'],
+                        dest: "dist/views/"
                     }
                 ]
             },
         },
+
         watch: {
             scripts: {
                 files: ['src/**/*'],
@@ -80,5 +80,6 @@ module.exports = function(grunt) {
     // Register tasks
     grunt.registerTask('default', ['build','watch']);
     grunt.registerTask('build', ['clean','copy','compass:main']);
+    grunt.registerTask('dist', ['clean','copy','compass:dist']);
 
 };

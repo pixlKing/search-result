@@ -1,0 +1,46 @@
+<article class="cluster generic-box" ng-repeat="data in hotels | searchFor:searchString | orderBy:'stars' | filter:starsFilter ">
+	<figure class="cluster-box-img">
+		<div class="flags">
+			<div class="flag recomendado">¡Hotel recomendado!</div>
+		</div>
+		<a href="#" title="Ver hotel">
+			<img src="/almundo/dist/img/product-dummy-1.jpg" />
+		</a>
+		<div class="cluster-nav-img">
+			<i class="fa fa-chevron-circle-left  prev" aria-hidden="true"></i>
+			<i class="fa fa-chevron-circle-right next" aria-hidden="true"></i>
+		</div>
+	</figure>
+	<div class="cluster-box-center">
+		<h1 class="cluster-title">
+			<a href="#" title="Ver hotel">{{ data.name }}</a>
+		</h1>
+		<div class="cluster-stars">
+			<i class="cluster-stars-bar star-fill-{{data.stars}}"></i>
+		</div>
+		<div class="meal-plan">
+			<i class="fa fa-bed" aria-hidden="true"></i>
+			<span>Solo la habitación</span>
+		</div>
+		<div class="amenities">
+			<i class="fa fa-glass" aria-hidden="true"></i>
+			<i class="fa fa-umbrella" aria-hidden="true"></i>
+			<i class="fa fa-check-square-o" aria-hidden="true"></i>
+			<i class="fa fa-coffee" aria-hidden="true"></i>
+			<i class="fa fa-male" aria-hidden="true"></i>
+			<i class="fa fa-wifi" aria-hidden="true"></i>
+		</div>
+	</div>
+	<div class="cluster-box-price">
+		<div class="box-price">
+			<p class="text price-per-night">Precio por noche por habitación</p>
+			<div class="regular-price">ARS <b class="price">{{ data.price }}</b></div>
+			<p class="text taxes">Impuestos y tasas no incluidos</p>
+		</div>
+		<a class="btn btn-l btn-full show-article" href="#">Ver hotel</a>
+		<div class="payment-methods">
+			<p class="text">Pagá en cuotas</p>
+			<p class="text">Pagá en destino</p>
+		</div>
+	</div>
+</article>
