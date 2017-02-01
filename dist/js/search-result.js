@@ -1,5 +1,5 @@
 // Price Range slider bar
-$( function() {
+function priceSliderRangeInit() {
     var sliderRange = $("#slider-range");
     sliderRange.slider({
         range: true,
@@ -13,14 +13,14 @@ $( function() {
     });
     $("#amount .min").html( "$" + sliderRange.slider( "values", 0 ) );
     $("#amount .max").html( "$" + sliderRange.slider( "values", 1 ) );
-});
+};
 
 // Filters
 function checkAllStars(){
     $('#check-all-stars').click(function(){
         $(this).closest('.filter-stars-cont').find('input:checkbox:not(:checked)').trigger('click');
     });
-}
+};
 
 //Generic dropdown functionality
 function dropdowns(){
@@ -35,18 +35,22 @@ function dropdowns(){
         icon.toggleClass("active closed");
         colapse.toggleClass("active closed");
     });
-}
+};
 
-$(document).ready(function(){
-    // Header hamburger button
+function hamburgerButton(){
     $('#hamburger-icon').click(function(){
         $(this).toggleClass('open');
     });
+}
 
+$(document).ready(function(){
 
+    // Header hamburger button
+    hamburgerButton()
     // Filters
     checkAllStars();
     // Generic Dropdowns
-    dropdowns()
-
+    dropdowns();
+    // Price range barr init
+    priceSliderRangeInit();
 });

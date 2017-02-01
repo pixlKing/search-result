@@ -129,4 +129,17 @@
 			}
 		}
 	}
+	.cluster-stars-bar {
+		background: url('../img/stars-bar.png') 0 0 repeat;
+		display: inline-block;
+		height: $stars-bar-height;
+		width: $stars-bar-width;
+
+		$ancho: $star-fill-width;
+		@for $i from 0 through 5{
+			&.star-fill-#{$i} {
+				width: $ancho * $i;
+			}
+		}
+	}
 }

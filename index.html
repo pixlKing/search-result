@@ -12,7 +12,10 @@
 	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="dist/css/main.css">
 </head>
-<body>
+<body ng-controller="appController">
+
+
+
 	<header class="site-header">
 		<div class="header-top">
 			<div class="site-col">
@@ -137,7 +140,7 @@
 
 			</section>
 
-			<div class="content">
+			<div class="content" ng-controller="StarsCtrl">
 				<!-- Col left -->
 				<aside class="filters-col">
 
@@ -164,14 +167,14 @@
 								</header>
 								<footer class="filter-footer active" data-drop-colapse="byName">
 									<div class="buttons-set">
-										<input type="text" placeholder="Ingrese el nombre del hotel" />
+										<input type="text" ng-model="searchString" placeholder="Ingrese el nombre del hotel" />
 										<button class="btn btn-s">Aceptar</button>
 									</div>
 								</footer>
 							</div>
 							<!-- box Filtro by Price -->
-							<div class="generic-box no-margin box-glued active" data-drop-trigger="byPrice">
-								<header class="filter-header">
+							<div class="generic-box no-margin box-glued" >
+								<header class="filter-header active" data-drop-trigger="byPrice">
 									<i class="fa fa-usd" aria-hidden="true"></i>
 									<span>Precio por noche</span>
 									<i class="fa fa-caret-down pull-right active" aria-hidden="true" data-drop-icon="byPrice"></i>
@@ -203,7 +206,7 @@
 											<span class="result-qty">(284)</span>
 										</label>
 										<label><!-- 5 stars -->
-											<input type="checkbox" />
+											<input type="checkbox" ng-click="includeStars('5')" />
 											<span class="box-stars">
 												<i class="fa fa-star" aria-hidden="true"></i>
 												<i class="fa fa-star" aria-hidden="true"></i>
@@ -214,7 +217,7 @@
 											<span class="result-qty">(25)</span>
 										</label>
 										<label><!-- 4 stars -->
-											<input type="checkbox" />
+											<input type="checkbox" ng-click="includeStars('4')" />
 											<span class="box-stars">
 												<i class="fa fa-star" aria-hidden="true"></i>
 												<i class="fa fa-star" aria-hidden="true"></i>
@@ -224,7 +227,7 @@
 											<span class="result-qty">(128)</span>
 										</label>
 										<label><!-- 3 stars -->
-											<input type="checkbox" />
+											<input type="checkbox" ng-click="includeStars('3')" />
 											<span class="box-stars">
 												<i class="fa fa-star" aria-hidden="true"></i>
 												<i class="fa fa-star" aria-hidden="true"></i>
@@ -233,7 +236,7 @@
 											<span class="result-qty">(93)</span>
 										</label>
 										<label><!-- 2 stars -->
-											<input type="checkbox" />
+											<input type="checkbox" ng-click="includeStars('2')" />
 											<span class="box-stars">
 												<i class="fa fa-star" aria-hidden="true"></i>
 												<i class="fa fa-star" aria-hidden="true"></i>
@@ -241,7 +244,7 @@
 											<span class="result-qty">(31)</span>
 										</label>
 										<label><!-- 1 stars -->
-											<input type="checkbox" />
+											<input type="checkbox" ng-click="includeStars('1')" />
 											<span class="box-stars">
 												<i class="fa fa-star" aria-hidden="true"></i>
 											</span>
@@ -268,9 +271,9 @@
 						</select>
 					</section>
 
-					<ng-include src="'src/views/includes/cluster.html'"></ng-include>
-					<ng-include src="'src/views/includes/cluster-2.html'"></ng-include>
-					<ng-include src="'src/views/includes/cluster-3.html'"></ng-include>
+					<!-- Cluster product -->
+					<ng-include src="'dist/views/includes/cluster.html'"></ng-include>
+
 				</section>
 			</div>
 

@@ -40,6 +40,12 @@
 	float: left;
 }
 
+//Hiden classes
+.hide-element-simple {
+	@include hide-element-simple;
+}
+
+
 // Responsive utilities
 .hidden-phone-down {
 
