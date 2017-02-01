@@ -140,7 +140,7 @@
 
 			</section>
 
-			<div class="content">
+			<div class="content" ng-controller="StarsCtrl">
 				<!-- Col left -->
 				<aside class="filters-col">
 
@@ -206,7 +206,7 @@
 											<span class="result-qty">(284)</span>
 										</label>
 										<label><!-- 5 stars -->
-											<input type="checkbox" />
+											<input type="checkbox" ng-click="includeStars('5')" />
 											<span class="box-stars">
 												<i class="fa fa-star" aria-hidden="true"></i>
 												<i class="fa fa-star" aria-hidden="true"></i>
@@ -217,7 +217,7 @@
 											<span class="result-qty">(25)</span>
 										</label>
 										<label><!-- 4 stars -->
-											<input type="checkbox" />
+											<input type="checkbox" ng-click="includeStars('4')" />
 											<span class="box-stars">
 												<i class="fa fa-star" aria-hidden="true"></i>
 												<i class="fa fa-star" aria-hidden="true"></i>
@@ -227,7 +227,7 @@
 											<span class="result-qty">(128)</span>
 										</label>
 										<label><!-- 3 stars -->
-											<input type="checkbox" />
+											<input type="checkbox" ng-click="includeStars('3')" />
 											<span class="box-stars">
 												<i class="fa fa-star" aria-hidden="true"></i>
 												<i class="fa fa-star" aria-hidden="true"></i>
@@ -236,7 +236,7 @@
 											<span class="result-qty">(93)</span>
 										</label>
 										<label><!-- 2 stars -->
-											<input type="checkbox" />
+											<input type="checkbox" ng-click="includeStars('2')" />
 											<span class="box-stars">
 												<i class="fa fa-star" aria-hidden="true"></i>
 												<i class="fa fa-star" aria-hidden="true"></i>
@@ -244,7 +244,7 @@
 											<span class="result-qty">(31)</span>
 										</label>
 										<label><!-- 1 stars -->
-											<input type="checkbox" />
+											<input type="checkbox" ng-click="includeStars('1')" />
 											<span class="box-stars">
 												<i class="fa fa-star" aria-hidden="true"></i>
 											</span>

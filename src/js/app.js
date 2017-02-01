@@ -24,3 +24,23 @@ app.filter('searchFor', function(){
         return result;
     };
 });
+
+function StarsCtrl($scope) {
+    $scope.starsIncludes = [];
+
+    $scope.includeStars = function(stars) {
+        var i = $.inArray(stars, $scope.starsIncludes);
+        if (i > -1) {
+            $scope.starsIncludes.splice(i, 1);
+        } else {
+            $scope.starsIncludes.push(stars);
+        }
+    }
+    $scope.starsFilter = function(app) {
+        if ($scope.starsIncludes.length > 0) {
+            if ($.inArray(app.stars, $scope.starsIncludes) < 0)
+                return;
+        }
+        return app;
+    }
+}

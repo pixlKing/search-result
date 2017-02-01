@@ -1,4 +1,4 @@
-<article class="cluster generic-box" ng-repeat="data in hotels | searchFor:searchString | orderBy:'stars'">
+<article class="cluster generic-box" ng-repeat="data in hotels | searchFor:searchString | orderBy:'stars' | filter:starsFilter ">
 	<figure class="cluster-box-img">
 		<div class="flags">
 			<div class="flag recomendado">¡Hotel recomendado!</div>
