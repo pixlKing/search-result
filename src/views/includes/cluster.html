@@ -1,10 +1,11 @@
 <article class="cluster generic-box" ng-repeat="data in hotels | searchFor:searchString | orderBy:'stars' | filter:starsFilter ">
 	<figure class="cluster-box-img">
 		<div class="flags">
-			<div class="flag recomendado">¡Hotel recomendado!</div>
+			<div class="flag off" ng-if="$index === 2">23%<br/>OFF</div>
+			<div class="flag recomendado" ng-if="$index !== 2">¡Hotel recomendado!</div>
 		</div>
 		<a href="#" title="Ver hotel">
-			<img src="/almundo/dist/img/product-dummy-1.jpg" />
+			<img src="dist/img/{{data.image}}" />
 		</a>
 		<div class="cluster-nav-img">
 			<i class="fa fa-chevron-circle-left  prev" aria-hidden="true"></i>
