@@ -549,7 +549,7 @@ body {
 
 /* line 1, ../../src/scss/_header.scss */
 .site-header {
-  background: url(/almundo/dist/img/site-bkg.jpg) center top no-repeat;
+  background: url("/search-result/dist/img/site-bkg.jpg") center top no-repeat;
   background-size: cover; }
   @media (min-width: 1025px) {
     /* line 1, ../../src/scss/_header.scss */
