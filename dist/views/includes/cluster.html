@@ -1,4 +1,4 @@
-<article class="cluster generic-box" ng-repeat="data in hotels | searchFor:searchString | orderBy:'stars' | filter:starsFilter ">
+<article class="cluster generic-box" ng-repeat="data in hotels | searchFor:searchString | orderBy: 'name' ">
 	<figure class="cluster-box-img">
 		<div class="flags">
 			<div class="flag off" ng-if="$index === 2">23%<br/>OFF</div>
